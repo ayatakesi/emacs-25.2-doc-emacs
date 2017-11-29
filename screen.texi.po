@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 25.1\n"
 "POT-Creation-Date: 2017-11-28 07:15+0000\n"
-"PO-Revision-Date: 2016-10-02 11:59+0900\n"
+"PO-Revision-Date: 2017-11-30 03:33+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
-"Language-Team: HIRO project <h1r0p@outlook.jp>\n"
+"Language-Team: \n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -578,7 +578,7 @@ msgid ""
 "On frames created for @command{emacsclient} (@pxref{Invoking emacsclient}), "
 "the next character is @samp{@@}.  This indication is typical for frames of "
 "an Emacs process running as a daemon (@pxref{Emacs Server})."
-msgstr ""
+msgstr "@command{emacsclient} (@ref{Invoking emacsclient}を参照)で作成されたフレームでは、次の文字に@samp{@@}が表示されます。これは通常、デーモン(@ref{Emacs Server}を参照)として実行中のEmacsプロセスのフレームにたいして表示されます。"
 
 #. type: Plain text
 #: original_texis/screen.texi:230
@@ -600,19 +600,11 @@ msgstr ""
 
 #. type: Plain text
 #: original_texis/screen.texi:234
-#, fuzzy
-#| msgid ""
-#| "The character after @var{ch} is normally a dash (@samp{-}).  However, if "
-#| "the default-directory for the current buffer is on a remote machine, "
-#| "@samp{@@} is displayed instead (@pxref{File Names})."
 msgid ""
 "The character after @var{ch} is normally a dash (@samp{-}).  However, if the "
 "default-directory for the current buffer is on a remote machine (@pxref{File "
 "Names}), @samp{@@} is displayed instead."
-msgstr ""
-"通常、@var{ch}の後ろの文字はダッシュ(@samp{-})です。しかしカレントバッファー"
-"のデフォルトディレクトリーがリモートマシン上にある場合、かわりに@samp{@@}が表"
-"示されます(@ref{File Names}を参照してください)。"
+msgstr "通常、@var{ch}の後ろの文字はダッシュ(@samp{-})です。しかしカレントバッファーのデフォルトディレクトリーがリモートマシン上(@ref{File Names}を参照してください)にある場合、かわりに@samp{@@}が表示されます。"
 
 #. type: Plain text
 #: original_texis/screen.texi:237
@@ -808,13 +800,6 @@ msgstr "menu bar access using keyboard"
 
 #. type: Plain text
 #: original_texis/screen.texi:316
-#, fuzzy
-#| msgid ""
-#| "Instead of using the mouse, you can also invoke the first menu bar item "
-#| "by pressing @key{F10} (to run the command @code{menu-bar-open}).  You can "
-#| "then navigate the menus with the arrow keys.  To activate a selected menu "
-#| "item, press @key{RET}; to cancel menu navigation, press @kbd{C-g} or "
-#| "@kbd{@key{ESC} @key{ESC} @key{ESC}}."
 msgid ""
 "Instead of using the mouse, you can also invoke the first menu bar item by "
 "pressing @key{F10} (to run the command @code{menu-bar-open}).  You can then "
@@ -824,12 +809,7 @@ msgid ""
 "built with a GUI toolkit, the menus are drawn and controlled by the toolkit, "
 "and the key sequences to cancel menu navigation might be different from the "
 "above description.)"
-msgstr ""
-"マウスを使う代わりに@key{F10}(コマンド@code{menu-bar-open}を実行します)を押せ"
-"ば、メニューバーの最初のアイテムを呼び出すことができます。その後は矢印キーで"
-"メニュー操作できます。選択されたメニューアイテムを起動するときは@key{RET}、メ"
-"ニュー操作をキャンセルするときは@kbd{C-g}か@kbd{@key{ESC} @key{ESC} "
-"@key{ESC}}を押します。"
+msgstr "マウスを使う代わりに@key{F10}(コマンド@code{menu-bar-open}を実行します)を押せば、メニューバーの最初のアイテムを呼び出すことができます。その後は矢印キーでメニュー操作できます。選択されたメニューアイテムを起動するときは@key{RET}、メニュー操作をキャンセルするときは@kbd{C-g}か@kbd{@key{ESC} @key{ESC} @key{ESC}}を押します。(ただし、GUIツールキットとともにビルドされたEmacsでは、メニューはそのツールキットにより描画および制御され、メニュー操作をキャンセルするキーシーケンスは上記の説明とは異なるかもしれません。)"
 
 #. type: kindex
 #: original_texis/screen.texi:317

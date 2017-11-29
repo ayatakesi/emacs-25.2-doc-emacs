@@ -112,15 +112,14 @@ Methods}を参照してください)。
   @var{cs}の後ろの文字は、通常コロンです。もし違う文字が表示されている場合、それはファイルのエンコーディングに特別な行末規則が使われていることを意味します。通常ファイル内のテキストの各行は@dfn{改行文字(newline
 characters)}で区切られていますが、他の2つの規則が使われる場合もあります。MS-DOSのファイルを編集する場合にはキャリッジリターン(carriage-return)とラインフィード(linefeed)が使われ、コロンではなくバックスラッシュ(@samp{\})または@samp{(DOS)}(オペレーティングシステムに依存する)が表示されます。古いマッキントッシュシステムのファイルでは、改行文字の代わりにキャリッジリターン(carriage-return)が使われ、そのような場合コロンではなくスラッシュ(@samp{/})または@samp{(Mac)}が表示されます。いくつかのシステムでは行の区切りとして改行文字を使う場合、コロンではなく@samp{(Unix)}と表示されます。
 
-  On frames created for @command{emacsclient} (@pxref{Invoking emacsclient}),
-the next character is @samp{@@}.  This indication is typical for frames of
-an Emacs process running as a daemon (@pxref{Emacs Server}).
+  @command{emacsclient} (@ref{Invoking
+emacsclient}を参照)で作成されたフレームでは、次の文字に@samp{@@}が表示されます。これは通常、デーモン(@ref{Emacs
+Server}を参照)として実行中のEmacsプロセスのフレームにたいして表示されます。
 
   モードラインの次の要素は@var{ch}で示される文字列です。2つのダッシュ(@samp{--})が表示されている場合、ウィンドウに表示されているバッファーとディスク上のファイルの内容が同じことを意味し、たとえばバッファーが未変更(unmodified)の場合です。バッファーが変更されている場合には2つの星印(@samp{**})が表示されます。読み出し専用のバッファーの場合には、バッファーが編集されている場合には@samp{%*}になり、バッファーが編集されていない場合には@samp{%%}となります。
 
-  The character after @var{ch} is normally a dash (@samp{-}).  However, if the
-default-directory for the current buffer is on a remote machine (@pxref{File
-Names}), @samp{@@} is displayed instead.
+  通常、@var{ch}の後ろの文字はダッシュ(@samp{-})です。しかしカレントバッファーのデフォルトディレクトリーがリモートマシン上(@ref{File
+Names}を参照してください)にある場合、かわりに@samp{@@}が表示されます。
 
   @var{fr}は選択されているフレームの名前です(@ref{Frames}を参照してください)。これはテキスト端末でだけ表示されます。フレーム名の初期値は@samp{F1}です。
 
@@ -165,14 +164,9 @@ k}とタイプしてから、通常どおりにマウスでメニューバーを
 @kindex F10
 @findex menu-bar-open
 @cindex menu bar access using keyboard
-  Instead of using the mouse, you can also invoke the first menu bar item by
-pressing @key{F10} (to run the command @code{menu-bar-open}).  You can then
-navigate the menus with the arrow keys.  To activate a selected menu item,
-press @key{RET}; to cancel menu navigation, press @kbd{C-g} or
-@kbd{@key{ESC} @key{ESC} @key{ESC}}.  (However, note that when Emacs was
-built with a GUI toolkit, the menus are drawn and controlled by the toolkit,
-and the key sequences to cancel menu navigation might be different from the
-above description.)
+  マウスを使う代わりに@key{F10}(コマンド@code{menu-bar-open}を実行します)を押せば、メニューバーの最初のアイテムを呼び出すことができます。その後は矢印キーでメニュー操作できます。選択されたメニューアイテムを起動するときは@key{RET}、メニュー操作をキャンセルするときは@kbd{C-g}か@kbd{@key{ESC}
+@key{ESC}
+@key{ESC}}を押します。(ただし、GUIツールキットとともにビルドされたEmacsでは、メニューはそのツールキットにより描画および制御され、メニュー操作をキャンセルするキーシーケンスは上記の説明とは異なるかもしれません。)
 
 @kindex M-`
 @findex tmm-menubar
