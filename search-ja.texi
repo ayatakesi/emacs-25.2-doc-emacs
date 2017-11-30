@@ -1078,17 +1078,9 @@ Logモード)では、複数ファイルにたいするインクリメンタル�
 @kindex M-s o
 @item M-x occur
 @itemx M-s o
-Prompt for a regexp, and display a list showing each line in the buffer that
-contains a match for it.  If you type @kbd{M-n} at the prompt, you can reuse
-search strings from previous incremental searches.  The text that matched is
-highlighted using the @code{match} face.  To limit the search to part of the
-buffer, narrow to that part (@pxref{Narrowing}).  A numeric argument @var{n}
-specifies that @var{n} lines of context are to be displayed before and after
-each matching line.  The default number of context lines is specified by the
-variable @code{list-matching-lines-default-context-lines}.
+regexpの入力を求め、それへのマッチを含むバッファー内の各行をリスト表示します。プロンプトで@kbd{M-n}をタイプした場合は、前のインクリメンタル検索から検索文字列を再利用できます。マッチするテキストは、@code{match}フェイスを使用してハイライトされます。検索をバッファーの一部に制限するには、その部分にナローイングします(@ref{Narrowing}を参照してください)。数引数@var{n}を指定すると、そのコンテキストでマッチした各行の、前後@var{n}行を表示します。コンテキストのデフォルトの行すは、変数@code{list-matching-lines-default-context-lines}により指定されます。
 
-You can also run @kbd{M-s o} when an incremental search is active; this uses
-the current search string.
+インクリメンタル検索がアクティブのときは@kbd{M-s o}を実行して、カレントのサーチリングを使うこともできます。
 
 @kindex RET @r{(Occur mode)}
 @kindex o @r{(Occur mode)}
