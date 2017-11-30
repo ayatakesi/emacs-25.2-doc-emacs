@@ -299,9 +299,7 @@ element)は、補完スタイルの名前(Lispシンボル)です。デフォル
 @item partial-completion
 このアグレッシブな補完スタイルは、ミニバッファーのテキストをハイフンまたは空白で区切り、各単語ごとに補完をおこないます(たとえばコマンド名を補完する場合、@samp{em-l-m}は、@samp{emacs-lisp-mode}に補完されます)。
 
-Furthermore, a @samp{*} in the minibuffer text is treated as a
-@dfn{wildcard}---it matches any string of characters at the corresponding
-position in the completion alternative.
+さらにミニバッファーのテキスト中の@samp{*}は、@dfn{ワイルドカード(wildcard)}として扱われます。これは補完候補の対応する位置にある文字列の、任意の文字とマッチします。
 
 @item emacs22
 この補完スタイルは@code{basic}とにていますが、ミニバッファーのポイントより後のテキストを無視します。この名前は補完の動作がEmacs
@@ -478,14 +476,7 @@ File ‘foo.el’ exists; overwrite? (y or n)
 @end smallexample
 
 @noindent
-Because this query does not actually use the minibuffer, the usual
-minibuffer editing commands cannot be used.  However, you can perform some
-window scrolling operations while the query is active: @kbd{C-l} recenters
-the selected window; @kbd{C-v} (or @key{PageDown} or @key{next}) scrolls
-forward; @kbd{M-v} (or @key{PageUp}, or @key{prior}) scrolls backward;
-@kbd{C-M-v} scrolls forward in the next window; and @kbd{C-M-S-v} scrolls
-backward in the next window.  Typing @kbd{C-g} dismisses the query, and
-quits the command that issued it (@pxref{Quitting}).
+この質問はミニバッファーを使用しないので、通常のミニバッファー編集コマンドは使えません。しかしいくつかのウィンドウをスクロールする操作は行えます。@kbd{C-l}による選択されたウィンドウの再センタリング、@kbd{C-v}(または@key{PageDown}か@key{next})による前方へのスクロール、@kbd{M-v}(または@key{PageUp}か@key{prior})による後方へのスクロール、@kbd{C-M-v}による次のウィンドウの前方へのスクロール、@kbd{C-M-S-v}による次のウィンドウの後方へのスクロールができます。@kbd{C-g}は質問を打ちきり、質問を発したコマンドを終了します(@ref{Quitting}を参照してください)。
 
 @cindex yes or no prompt
   2番目のyes-or-no形式の質問は、間違った答えが深刻な事態を招くような場合に使用されます。これはミニバッファーを使い、@samp{(yes or
@@ -497,8 +488,5 @@ Buffer foo.el modified; kill anyway? (yes or no)
 @end smallexample
 
 @noindent
-To answer, you must type @samp{yes} or @samp{no} into the minibuffer,
-followed by @key{RET}.  The minibuffer behaves as described in the previous
-sections; you can switch to another window with @kbd{C-x o}, use the history
-commands @kbd{M-p} and @kbd{M-n}, etc.  Type @kbd{C-g} to quit the
-minibuffer and the querying command.
+これに答えるには、ミニバッファーに@samp{yes}または@samp{no}と入力してから、@key{RET}を押さなければなりません。ミニバッファーは前のセクションで説明したように動作します。@kbd{C-x
+o}による他のウィンドウへのスイッチ、ヒストリーコマンドの@kbd{M-p}や@kbd{M-n}などが使用できます。@kbd{C-g}でミニバッファーを閉じて、質問を発したコマンドを終了できます。
