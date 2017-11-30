@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 25.1\n"
 "POT-Creation-Date: 2017-11-28 07:15+0000\n"
-"PO-Revision-Date: 2016-10-02 13:13+0900\n"
+"PO-Revision-Date: 2017-11-30 21:01+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
-"Language-Team: HIRO project <h1r0p@outlook.jp>\n"
+"Language-Team: \n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2884,30 +2884,18 @@ msgstr "auto-revert-interval"
 
 #. type: vindex
 #: original_texis/files.texi:940
-#, fuzzy, no-wrap
-#| msgid "auto-save for remote files"
+#, no-wrap
 msgid "auto-revert-remote-files"
-msgstr "auto-save for remote files"
+msgstr "auto-revert-remote-files"
 
 #. type: vindex
 #: original_texis/files.texi:941
-#, fuzzy, no-wrap
-#| msgid "auto-revert-mode"
+#, no-wrap
 msgid "auto-revert-verbose"
-msgstr "auto-revert-mode"
+msgstr "auto-revert-verbose"
 
 #. type: Plain text
 #: original_texis/files.texi:951
-#, fuzzy
-#| msgid ""
-#| "You can also tell Emacs to revert buffers periodically.  To do this for a "
-#| "specific buffer, enable the minor mode Auto-Revert mode by typing @kbd{M-"
-#| "x auto-revert-mode}.  This automatically reverts the current buffer every "
-#| "five seconds; you can change the interval through the variable @code{auto-"
-#| "revert-interval}.  To do the same for all file buffers, type @kbd{M-x "
-#| "global-auto-revert-mode} to enable Global Auto-Revert mode.  These minor "
-#| "modes do not check or revert remote files, because that is usually too "
-#| "slow."
 msgid ""
 "You can also tell Emacs to revert buffers periodically.  To do this for a "
 "specific buffer, enable the minor mode Auto-Revert mode by typing @kbd{M-x "
@@ -2918,15 +2906,7 @@ msgid ""
 "check or revert remote files, because that is usually too slow.  This "
 "behavior can be changed by setting the variable @code{auto-revert-remote-"
 "files} to non-@code{nil}."
-msgstr ""
-"Emacsにバッファーを定期的にリバートするよう、指示することもできます。特定の"
-"バッファーにたいしてこれを行うには、@kbd{M-x auto-revert-mode}とタイプして、"
-"マイナーモードのAuto-Revertモードを有効にします。これは現在のバッファーを5秒"
-"ごとに自動的にリバートします。リバートの間隔は@code{auto-revert-interval}で変"
-"更できます。すべてのバッファーにたいして同じことを行うには、@kbd{M-x global-"
-"auto-revert-mode}とタイプして、Global Auto-Revertモードを有効にします。これら"
-"のマイナーモードはリモートのファイルにたいするチェックやリバートはしません。"
-"なぜならそれは通常とても遅いからです。"
+msgstr "Emacsにバッファーを定期的にリバートするよう、指示することもできます。特定のバッファーにたいしてこれを行うには、@kbd{M-x auto-revert-mode}とタイプして、マイナーモードのAuto-Revertモードを有効にします。これは現在のバッファーを5秒ごとに自動的にリバートします。リバートの間隔は@code{auto-revert-interval}で変更できます。すべてのバッファーにたいして同じことを行うには、@kbd{M-x global-auto-revert-mode}とタイプして、Global Auto-Revertモードを有効にします。これらのマイナーモードはリモートのファイルにたいするチェックやリバートはしません。なぜならそれは通常とても遅いからです。この動作は、変数@code{auto-revert-remote-files}を非@code{nil}にセットすることにより変更できます。"
 
 #. type: Plain text
 #: original_texis/files.texi:960
@@ -2953,7 +2933,7 @@ msgstr ""
 msgid ""
 "When a buffer is auto-reverted, a message is generated.  This can be "
 "suppressed by setting @code{auto-revert-verbose} to @code{nil}."
-msgstr ""
+msgstr "バッファーが自動リバートされたとき、メッセージが生成されます。これは@code{auto-revert-verbose}を非@code{nil}にセットすることにより、抑制できます。"
 
 #. type: Plain text
 #: original_texis/files.texi:967
@@ -3167,12 +3147,6 @@ msgstr "auto-save-visited-file-name"
 
 #. type: Plain text
 #: original_texis/files.texi:1045
-#, fuzzy
-#| msgid ""
-#| "If you want auto-saving to be done in the visited file rather than in a "
-#| "separate auto-save file, set the variable @code{auto-save-visited-file-"
-#| "name} to a non-@code{nil} value.  In this mode, there is no real "
-#| "difference between auto-saving and explicit saving."
 msgid ""
 "If you want auto-saving to be done in the visited file rather than in a "
 "separate auto-save file, set the variable @code{auto-save-visited-file-name} "
@@ -3180,10 +3154,7 @@ msgid ""
 "explicit saving.  However, differences still exist, in particular for modes "
 "which modify the buffer-saving process in non-trivial ways via various hooks "
 "(@pxref{Saving Buffers,,, elisp, The Emacs Lisp Reference Manual})."
-msgstr ""
-"別のauto-saveファイルにするのではなく、visitしているファイルに自動保存したい"
-"ときは、変数@code{auto-save-visited-file-name}を非@code{nil}値にセットしま"
-"す。このモードでは、自動保存と明示的な保存に実際の違いはありません。"
+msgstr "別のauto-saveファイルにするのではなく、visitしているファイルに自動保存したいときは、変数@code{auto-save-visited-file-name}を非@code{nil}値にセットします。このモードでは、自動保存と明示的な保存は非常に似ています。しかし、さまざまなフックを通じて特殊な方法によりバッファー保存処理を変更するモードのにたいしては特に、違いは依然として存在します。"
 
 #. type: vindex
 #: original_texis/files.texi:1046

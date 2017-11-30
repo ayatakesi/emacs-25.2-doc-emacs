@@ -589,22 +589,16 @@ b}で明示的に作成したバッファーは、リバートできません。
 @vindex auto-revert-interval
 @vindex auto-revert-remote-files
 @vindex auto-revert-verbose
-  You can also tell Emacs to revert buffers periodically.  To do this for a
-specific buffer, enable the minor mode Auto-Revert mode by typing @kbd{M-x
-auto-revert-mode}.  This automatically reverts the current buffer every five
-seconds; you can change the interval through the variable
-@code{auto-revert-interval}.  To do the same for all file buffers, type
-@kbd{M-x global-auto-revert-mode} to enable Global Auto-Revert mode.  These
-minor modes do not check or revert remote files, because that is usually too
-slow.  This behavior can be changed by setting the variable
-@code{auto-revert-remote-files} to non-@code{nil}.
+  Emacsにバッファーを定期的にリバートするよう、指示することもできます。特定のバッファーにたいしてこれを行うには、@kbd{M-x
+auto-revert-mode}とタイプして、マイナーモードのAuto-Revertモードを有効にします。これは現在のバッファーを5秒ごとに自動的にリバートします。リバートの間隔は@code{auto-revert-interval}で変更できます。すべてのバッファーにたいして同じことを行うには、@kbd{M-x
+global-auto-revert-mode}とタイプして、Global
+Auto-Revertモードを有効にします。これらのマイナーモードはリモートのファイルにたいするチェックやリバートはしません。なぜならそれは通常とても遅いからです。この動作は、変数@code{auto-revert-remote-files}を非@code{nil}にセットすることにより変更できます。
 
   Auto-Revertモードの1つの使い方は、システムログのようなファイルを``tail''することです。これにより、それらのファイルにたいする、他のプログラムによる変更を、継続的に表示できます。これを行うには、ポイントをバッファーの最後に移動します。そうすればファイル内容が変更されても、ポイントはその位置に留まります。しかし、ファイルがファイルの終端方向に向かって変更されるだけだと確信できるときは、かわりにAuto-Revert
 Tailモード(@code{auto-revert-tail-mode})を使います。このモードは、これをより効果的に行います。Auto-Revert
 Tailモードは、リモートのファイルにたいしても機能します。
 
-  When a buffer is auto-reverted, a message is generated.  This can be
-suppressed by setting @code{auto-revert-verbose} to @code{nil}.
+  バッファーが自動リバートされたとき、メッセージが生成されます。これは@code{auto-revert-verbose}を非@code{nil}にセットすることにより、抑制できます。
 
   バージョンコントロールシステムの下にあるファイルを、以前のバージョンにリバーとするコマンドについては、@ref{VC
 Undo}を参照してください。バージョンコントロールシステムの下にあるファイルをvisitしているときの自動リバートの特性については、@ref{VC
@@ -647,12 +641,7 @@ Files}を参照してください)を、ローカルマシンの一時ディレ�
 C-s}で保存するか、@kbd{C-u 1 M-x auto-save-mode}を使います。
 
 @vindex auto-save-visited-file-name
-  If you want auto-saving to be done in the visited file rather than in a
-separate auto-save file, set the variable @code{auto-save-visited-file-name}
-to a non-@code{nil} value.  In this mode, auto-saving is very similar to
-explicit saving.  However, differences still exist, in particular for modes
-which modify the buffer-saving process in non-trivial ways via various hooks
-(@pxref{Saving Buffers,,, elisp, The Emacs Lisp Reference Manual}).
+  別のauto-saveファイルにするのではなく、visitしているファイルに自動保存したいときは、変数@code{auto-save-visited-file-name}を非@code{nil}値にセットします。このモードでは、自動保存と明示的な保存は非常に似ています。しかし、さまざまなフックを通じて特殊な方法によりバッファー保存処理を変更するモードのにたいしては特に、違いは依然として存在します。
 
 @vindex delete-auto-save-files
   バッファーのauto-saveファイルは、そのバッファーをvisitしているファイルに保存したとき削除されます(変数@code{delete-auto-save-files}を@code{nil}にセットすることにより、これを禁じることができます)。@kbd{C-x
