@@ -629,12 +629,8 @@ Reference Manual}を参照してください.
   EmacsがX
 ツールキットを使ってコンパイルされている場合、カラーとフォントを指定するフレームパラメーターは、メニューとメニューバーには影響を及ぼしません。なぜなら、それらはEmacsが直接描画しているのではなく、ツールキットにより描画されているからです。
 
-  Note that if you are using the desktop library to save and restore your
-sessions, the frames to be restored are recorded in the desktop file,
-together with their parameters.  When these frames are restored, the
-recorded parameters take precedence over the frame parameters specified by
-@code{default-frame-alist} and @code{initial-frame-alist} in your init
-file.  @xref{Saving Emacs Sessions}, for how to avoid that.
+  セッションの保存とリストアのためにdesktopライブラリーを使用している場合は、desktopファイルに記録されたフレームが、これらのパラメーターとともにリストアされることに注意してください。これらのフレームがリストアされるときは、initファイル内で@code{default-frame-alist}および@code{initial-frame-alist}で指定されているフレームパラメーターよりも、記録されたパラメーターが優先されます。これを避ける方法については、@xref{Saving
+Emacs Sessions}を参照してください。
 
 @node Scroll Bars
 @section Scroll Bars

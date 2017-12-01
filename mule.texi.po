@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 25.1\n"
 "POT-Creation-Date: 2017-11-28 07:15+0000\n"
-"PO-Revision-Date: 2016-10-02 15:51+0900\n"
+"PO-Revision-Date: 2017-12-01 11:29+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
-"Language-Team: HIRO project <h1r0p@outlook.jp>\n"
+"Language-Team: \n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1746,14 +1746,13 @@ msgstr ""
 #: original_texis/mule.texi:556
 #, no-wrap
 msgid "quail-activate-hook"
-msgstr ""
+msgstr "quail-activate-hook"
 
 #. type: findex
 #: original_texis/mule.texi:557
-#, fuzzy, no-wrap
-#| msgid "quail-show-key"
+#, no-wrap
 msgid "quail-translation-keymap"
-msgstr "quail-show-key"
+msgstr "quail-translation-keymap"
 
 #. type: Plain text
 #: original_texis/mule.texi:564
@@ -1763,7 +1762,7 @@ msgid ""
 "@xref{Hooks}.  For example, you can redefine some of the input method's keys "
 "by defining key bindings in the keymap returned by the function @code{quail-"
 "translation-keymap}, using @code{define-key}.  @xref{Init Rebinding}."
-msgstr ""
+msgstr "フック変数@code{quail-activate-hook}に関数で変更を行うことにより、入力メソッドが機能する方法を変更できます。@ref{Hooks}を参照してください。たとえば、関数@code{quail-translation-keymap}によりリターンされるキーマップ内のキーバインディングを、@code{define-key}を使用して、定義することによりその入力メソッドのいくつかのキーを再定義できます。@ref{Init Rebinding}を参照してください。"
 
 #. type: Plain text
 #: original_texis/mule.texi:569
@@ -2307,18 +2306,11 @@ msgstr "@dots{}-unix"
 
 #. type: table
 #: original_texis/mule.texi:758
-#, fuzzy
-#| msgid ""
-#| "Don't do any end-of-line conversion; assume the file uses newline to "
-#| "separate lines.  (This is the convention normally used on Unix and GNU "
-#| "systems, and Mac OS X.)"
 msgid ""
 "Don't do any end-of-line conversion; assume the file uses newline to "
 "separate lines.  (This is the convention normally used on Unix and GNU "
 "systems, and macOS.)"
-msgstr ""
-"何の改行変換も行いません。ファイルは行区切りに改行文字を使っていると仮定しま"
-"す(これは通常Unix、GNUシステム、Mac OS Xで使われている慣習です)。"
+msgstr "何の改行変換も行いません。ファイルは行区切りに改行文字を使っていると仮定します(これは通常Unix、GNUシステム、macOSで使われている慣習です)。"
 
 #. type: item
 #: original_texis/mule.texi:759
@@ -2350,17 +2342,10 @@ msgstr "@dots{}-mac"
 
 #. type: table
 #: original_texis/mule.texi:771
-#, fuzzy
-#| msgid ""
-#| "Assume the file uses carriage-return to separate lines, and do the "
-#| "appropriate conversion.  (This was the convention used on the Macintosh "
-#| "system prior to OS X.)"
 msgid ""
 "Assume the file uses carriage-return to separate lines, and do the "
 "appropriate conversion.  (This was the convention used in Classic Mac OS.)"
-msgstr ""
-"ファイルが行区切りに復帰文字を使っていると仮定し、適切な変換を行います(これは"
-"OS Xより前のMacintoshシステムで使われている慣習です)。"
+msgstr "ファイルが行区切りに復帰文字を使っていると仮定し、適切な変換を行います(これはクラシックなMac OSで使われていた慣習です)。"
 
 #. type: Plain text
 #: original_texis/mule.texi:778
@@ -3863,10 +3848,9 @@ msgstr ""
 
 #. type: findex
 #: original_texis/mule.texi:1381
-#, fuzzy, no-wrap
-#| msgid "describe-input-method"
+#, no-wrap
 msgid "describe-fontset"
-msgstr "describe-input-method"
+msgstr "describe-fontset"
 
 #. type: Plain text
 #: original_texis/mule.texi:1387
@@ -3875,7 +3859,7 @@ msgid ""
 "describe-fontset}} command.  It prompts for a fontset name, defaulting to "
 "the one used by the current frame, and then displays all the subranges of "
 "characters and the fonts assigned to them in that fontset."
-msgstr ""
+msgstr "特定のフォントセットの情報を表示するためには、@w{@kbd{M-x describe-fontset}}コマンドを使用します。これこのコマンドはフォントセットの名前(デフォルトはカレントフレームで使用されているフォントセット)を尋ねて、文字のすべての部分範囲(subrange)と、フォントセット内でそれらに割り当てられたフォントを表示します。"
 
 #. type: Plain text
 #: original_texis/mule.texi:1394
@@ -3946,19 +3930,11 @@ msgstr "または単に短く@samp{fontset-standard}です。"
 
 #. type: Plain text
 #: original_texis/mule.texi:1415
-#, fuzzy
-#| msgid ""
-#| "On GNUstep and Mac OS X, the standard fontset is created using the value "
-#| "of @code{ns-standard-fontset-spec}, and on MS Windows it is created using "
-#| "the value of @code{w32-standard-fontset-spec}."
 msgid ""
 "On GNUstep and macOS, the standard fontset is created using the value of "
 "@code{ns-standard-fontset-spec}, and on MS Windows it is created using the "
 "value of @code{w32-standard-fontset-spec}."
-msgstr ""
-"GNUstep、およびMac OS Xではスタンダードフォントセットは、@code{ns-standard-"
-"fontset-spec}の値を使って作成され、MS Windowsでは@code{w32-standard-fontset-"
-"spec}の値を使って作成されます。"
+msgstr "GNUstep、およびmacOSではスタンダードフォントセットは、@code{ns-standard-fontset-spec}の値を使って作成され、MS Windowsでは@code{w32-standard-fontset-spec}の値を使って作成されます。"
 
 #. type: Plain text
 #: original_texis/mule.texi:1421

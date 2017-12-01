@@ -386,12 +386,8 @@ C-\}は、インクリメンタル検索の中で使うのが特に便利です�
 
 @vindex quail-activate-hook
 @findex quail-translation-keymap
-  You can modify how an input method works by making your changes in a
-function that you add to the hook variable @code{quail-activate-hook}.
-@xref{Hooks}.  For example, you can redefine some of the input method's keys
-by defining key bindings in the keymap returned by the function
-@code{quail-translation-keymap}, using @code{define-key}.  @xref{Init
-Rebinding}.
+  フック変数@code{quail-activate-hook}に関数で変更を行うことにより、入力メソッドが機能する方法を変更できます。@ref{Hooks}を参照してください。たとえば、関数@code{quail-translation-keymap}によりリターンされるキーマップ内のキーバインディングを、@code{define-key}を使用して、定義することによりその入力メソッドのいくつかのキーを再定義できます。@ref{Init
+Rebinding}を参照してください。
 
   キーボードにない文字をタイプする他の方法は、@kbd{C-x 8 @key{RET}}
 (@code{insert-char})を使って、Unicode名またはコードポイント(code-point)にもとづいて1つの文字を挿入する方法です。@ref{Inserting
@@ -523,16 +519,13 @@ list-coding-systems}とタイプします。表示されるリストは、モー
 
 @table @code
 @item @dots{}-unix
-Don't do any end-of-line conversion; assume the file uses newline to
-separate lines.  (This is the convention normally used on Unix and GNU
-systems, and macOS.)
+何の改行変換も行いません。ファイルは行区切りに改行文字を使っていると仮定します(これは通常Unix、GNUシステム、macOSで使われている慣習です)。
 
 @item @dots{}-dos
 ファイルが行区切りに改行復帰文字を使っていると仮定し、適切な変換を行います(これは通常Microsoftシステムで使われている慣習です@footnote{これはMIMEの@samp{text/*}の本体、および他のネットワーク転送のコンテキストでも指定されています。これはEmacsが直接サポートしないSGMLリファレンス構文のrecord-start/record-endとは異なります。})。
 
 @item @dots{}-mac
-Assume the file uses carriage-return to separate lines, and do the
-appropriate conversion.  (This was the convention used in Classic Mac OS.)
+ファイルが行区切りに復帰文字を使っていると仮定し、適切な変換を行います(これはクラシックなMac OSで使われていた慣習です)。
 @end table
 
   これらのコーディングシステムの変種は、それらが完全に予測可能なため、簡略化のために@code{list-coding-systems}の表示からは省略されています。たとえばコーディングシステム@code{iso-latin-1}は@code{iso-latin-1-unix}、@code{iso-latin-1-dos}、@code{iso-latin-1-mac}という変種をもちます。
@@ -867,10 +860,8 @@ emacs -fn fontset-standard
   使用するフォントセットが何も指定されていない場合、Emacsは@acronym{ASCII}フォントを使用し、そのフォントがカバーしない文字にたいするフォールバックに@samp{fontset-default}を使用します。名前とは裏腹にスタンダードフォントセットは、明示的に要求されたときだけ使用されます。
 
 @findex describe-fontset
-  To show the information about a specific fontset, use the @w{@kbd{M-x
-describe-fontset}} command.  It prompts for a fontset name, defaulting to
-the one used by the current frame, and then displays all the subranges of
-characters and the fonts assigned to them in that fontset.
+  特定のフォントセットの情報を表示するためには、@w{@kbd{M-x
+describe-fontset}}コマンドを使用します。これこのコマンドはフォントセットの名前(デフォルトはカレントフレームで使用されているフォントセット)を尋ねて、文字のすべての部分範囲(subrange)と、フォントセット内でそれらに割り当てられたフォントを表示します。
 
   フォントセットは、すべての文字コードにたいしてフォントを指定する必要はありません。フォントセットが特定の文字にたいしてフォントを指定していない、または指定したフォントがシステムに存在しない場合、フォントセットは文字を正しく表示できません。この場合、その文字は16進コード、細いスペース、または空のボックスがかわりに表示されます(詳細は、@ref{Text
 Display, , glyphless characters}を参照してください)。
@@ -891,9 +882,8 @@ Display, , glyphless characters}を参照してください)。
 @noindent
 または単に短く@samp{fontset-standard}です。
 
-  On GNUstep and macOS, the standard fontset is created using the value of
-@code{ns-standard-fontset-spec}, and on MS Windows it is created using the
-value of @code{w32-standard-fontset-spec}.
+  GNUstep、およびmacOSではスタンダードフォントセットは、@code{ns-standard-fontset-spec}の値を使って作成され、MS
+Windowsでは@code{w32-standard-fontset-spec}の値を使って作成されます。
 
 @c FIXME?  How does one access these, or do anything with them?
 @c Does it matter?
