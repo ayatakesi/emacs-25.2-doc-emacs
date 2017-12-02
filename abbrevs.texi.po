@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 25.1\n"
 "POT-Creation-Date: 2017-11-28 07:14+0000\n"
-"PO-Revision-Date: 2016-10-02 17:09+0900\n"
+"PO-Revision-Date: 2017-12-03 07:23+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
-"Language-Team: HIRO project <h1r0p@outlook.jp>\n"
+"Language-Team: \n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1026,17 +1026,10 @@ msgstr "dabbrev-completion"
 
 #. type: table
 #: original_texis/abbrevs.texi:346
-#, fuzzy
-#| msgid ""
-#| "Expand the word in the buffer before point as a @dfn{dynamic abbrev}, by "
-#| "searching in the buffer for words starting with that abbreviation "
-#| "(@code{dabbrev-expand})."
 msgid ""
 "Expand the word in the buffer before point as a @dfn{dynamic abbrev}, by "
 "searching for words starting with that abbreviation (@code{dabbrev-expand})."
-msgstr ""
-"バッファーのポイントの前の単語を@dfn{動的abbrev}として、その略語で始まる単語"
-"をバッファーから検索することにより展開します(@code{dabbrev-expand})。"
+msgstr "バッファーのポイントの前の単語を@dfn{動的abbrev}として、その略語で始まる単語を検索することにより展開します(@code{dabbrev-expand})。"
 
 #. type: table
 #: original_texis/abbrevs.texi:350
@@ -1082,33 +1075,24 @@ msgstr "dabbrev-check-all-buffers"
 
 #. type: vindex
 #: original_texis/abbrevs.texi:364
-#, fuzzy, no-wrap
-#| msgid "dabbrev-check-all-buffers"
+#, no-wrap
 msgid "dabbrev-check-other-buffers"
-msgstr "dabbrev-check-all-buffers"
+msgstr "dabbrev-check-other-buffers"
 
 #. type: Plain text
 #: original_texis/abbrevs.texi:369
-#, fuzzy
-#| msgid ""
-#| "After scanning the current buffer, @kbd{M-/} normally searches other "
-#| "buffers, unless you have set @code{dabbrev-check-all-buffers} to "
-#| "@code{nil}."
 msgid ""
 "After scanning the current buffer, @kbd{M-/} normally searches other "
 "buffers.  The variables @code{dabbrev-check-all-buffers} and @code{dabbrev-"
 "check-other-buffers} can be used to determine which other buffers, if any, "
 "are searched."
-msgstr ""
-"カレントバッファーを検索した後、@code{dabbrev-check-all-buffers}を@code{nil}"
-"にセットしていなければ、通常@kbd{M-/}は他のバッファーを検索します。"
+msgstr "カレントバッファーを検索した後、通常@kbd{M-/}は他のバッファーを検索します。@code{dabbrev-check-all-buffers}と@code{dabbrev-check-other-buffers}は、他のバッファー(もし存在するなら)のどれが検索されたか決定するのに使用できます。"
 
 #. type: vindex
 #: original_texis/abbrevs.texi:370
-#, fuzzy, no-wrap
-#| msgid "dabbrev-ignored-buffer-regexps"
+#, no-wrap
 msgid "dabbrev-ignored-buffer-names"
-msgstr "dabbrev-ignored-buffer-regexps"
+msgstr "dabbrev-ignored-buffer-names"
 
 #. type: vindex
 #: original_texis/abbrevs.texi:371
@@ -1118,12 +1102,6 @@ msgstr "dabbrev-ignored-buffer-regexps"
 
 #. type: Plain text
 #: original_texis/abbrevs.texi:378
-#, fuzzy
-#| msgid ""
-#| "For finer control over which buffers to scan, customize the variable "
-#| "@code{dabbrev-ignored-buffer-regexps}.  Its value is a list of regular "
-#| "expressions.  If a buffer's name matches any of these regular "
-#| "expressions, dynamic abbrev expansion skips that buffer."
 msgid ""
 "For finer control over which buffers to scan, customize the variables "
 "@code{dabbrev-ignored-buffer-names} and @code{dabbrev-ignored-buffer-"
@@ -1131,11 +1109,7 @@ msgid ""
 "value of the latter is a list of regular expressions; if a buffer's name "
 "matches any of these regular expressions, dynamic abbrev expansion skips "
 "that buffer."
-msgstr ""
-"どのバッファーを検索するかを制御するには、変数@code{dabbrev-ignored-buffer-"
-"regexps}をカスタマイズします。この変数の値は正規表現のリストです。バッファー"
-"名がこれらの正規表現のどれかにマッチした場合、動的abbrev展開はそのバッファー"
-"をスキップします。"
+msgstr "どのバッファーを検索するかを制御するには、変数@code{dabbrev-ignored-buffer-names}および@code{dabbrev-ignored-buffer-regexps}をカスタマイズします。前者の値は、スキップするバッファー名のリストです。後者の値は正規表現のリストで、バッファー名がこれらの正規表現のどれかにマッチした場合、動的abbrev展開はそのバッファーをスキップします。"
 
 #. type: Plain text
 #: original_texis/abbrevs.texi:385
@@ -1171,7 +1145,7 @@ msgstr ""
 msgid ""
 "You can control the way @kbd{M-/} determines the word to expand and how to "
 "expand it, see @ref{Dabbrev Customization}."
-msgstr ""
+msgstr "@kbd{M-/}が展開する単語を決定する方法と、それを展開する方法を制御できます。@ref{Dabbrev Customization}を参照してください。"
 
 #. type: Plain text
 #: original_texis/abbrevs.texi:400
@@ -1292,15 +1266,6 @@ msgstr "dabbrev-abbrev-char-regexp"
 
 #. type: Plain text
 #: original_texis/abbrevs.texi:454
-#, fuzzy
-#| msgid ""
-#| "The variable @code{dabbrev-abbrev-char-regexp}, if non-@code{nil}, "
-#| "controls which characters are considered part of a word, for dynamic "
-#| "expansion purposes.  The regular expression must match just one "
-#| "character, never two or more.  The same regular expression also "
-#| "determines which characters are part of an expansion.  The (default) "
-#| "value @code{nil} has a special meaning: dynamic abbrevs are made of word "
-#| "characters, but expansions are made of word and symbol characters."
 msgid ""
 "The variable @code{dabbrev-abbrev-char-regexp}, if non-@code{nil}, controls "
 "which characters are considered part of a word, for dynamic expansion "
@@ -1314,13 +1279,7 @@ msgid ""
 "not be what you want in a text buffer that includes unusual punctuation "
 "characters; in that case, the value @code{\"\\\\sw\"} might produce better "
 "results."
-msgstr ""
-"変数@code{dabbrev-abbrev-char-regexp}が非@code{nil}の場合、これは動的展開の目"
-"的のために、どの文字を単語の一部とするかを制御します。正規表現は2文字以上では"
-"なく、ただ1文字だけにマッチしなければなりません。同じ正規表現が、どの文字が展"
-"開結果の一部となるかも決定します。値が@code{nil}(デフォルト)の場合は特別な意"
-"味をもちます。動的abbrevは単語構成文字から構成されますが、展開結果は単語とシ"
-"ンボル文字から構成されます。"
+msgstr "変数@code{dabbrev-abbrev-char-regexp}が非@code{nil}の場合、これは動的展開の目的のために、どの文字を単語の一部とするかを制御します。正規表現は2文字以上ではなく、ただ1文字だけにマッチしなければなりません。同じ正規表現が、どの文字が展開結果の一部となるかも決定します。値が@code{nil}(デフォルト)の場合は特別な意味をもちます。動的abbrev(たとえばポイント位置の単語)は単語構成文字から構成されますが、それらの展開結果は単語とシンボル文字のシーケンスから取得されます。これはプログラムソース内、および多くの言語による人間が読むことができるテキストにたいするシンボルの展開にたいして、一般的にこれは適切ですが、一般的ではない句読点を含むテキストバッファーにおいては、おそらくあなたが望むものではないかもしれません。そのような場合は、値@code{\\\"\\\\\\\\sw\\\"}がよい結果を生成するかもしれません。"
 
 #. type: vindex
 #: original_texis/abbrevs.texi:455
