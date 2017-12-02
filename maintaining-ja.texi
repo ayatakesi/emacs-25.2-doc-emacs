@@ -168,13 +168,9 @@ Bazaar(bzr)は、リポジトリーベースと分散化されたバージョニ
 @cindex SRC
 @cindex src
 @item
-SRC (src) is RCS, reloaded---a specialized version-control system designed
-for single-file projects worked on by only one person.  It allows multiple
-files with independent version-control histories to exist in one directory,
-and is thus particularly well suited for maintaining small documents,
-scripts, and dotfiles.  While it uses RCS for revision storage, it presents
-a modern user interface featuring lockless operation and integer sequential
-version numbers.  VC supports almost all SRC operations.
+SRC
+(src)はRCSの再実装で、1人による単一ファイルのプロジェクトために特化してデザインされたバージョンコントロールシステムです。これは1つのディレクトリーの中に、独立したバージョンコントロール履歴をもつ複数ファイルを許容します。したがって、これは小さなドキュメントやスクリプト、ドットファイルを保守するのに適しています。これはRCSのリビジョンストレージを使用するので、非lock操作(lockless
+operation)や、シーケンシャルな整数リビジョン番号をもつ、現代的なユーザーインターフェースを提供します。
 @end itemize
 
 @node VCS Concepts
@@ -1713,10 +1709,7 @@ visit-tags-table}とタイプします。これは、引数としてタグテー
 @end example
 
 @noindent
-This tells the tags commands to look at the @file{TAGS} files in your
-@file{~/emacs} directory and in the @file{/usr/local/lib/emacs/src}
-directory.  The order depends on which file you are in and which tags table
-mentions that file.
+これは、タグコマンドが@file{TAGS}ファイルを、@file{~/emacs}ディレクトリーと@file{/usr/local/lib/emacs/src}ディレクトリーから探すよう指示します。順序は、対象にしているファイルと、どのタグテーブルがそのファイルを記述しているかに依存します。
 
   @code{tags-file-name}と@code{tags-table-list}の両方をセットしてはいけません。
 
