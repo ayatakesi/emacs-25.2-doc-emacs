@@ -226,13 +226,8 @@ Modes}を参照してください)で、これはカレントの関数名をモ�
 
 @findex which-function-mode
 @vindex which-func-modes
-  To either enable or disable Which Function mode, use the command @kbd{M-x
-which-function-mode}.  Which Function mode is a global minor mode.  By
-default, it takes effect in all major modes that know how to support it
-(i.e., all the major modes that support Imenu).  You can restrict it to a
-specific list of major modes by changing the value of the variable
-@code{which-func-modes} from @code{t} (which means to support all available
-major modes) to a list of major mode names.
+  Which Functionモードを有効または無効にするには、コマンド@kbd{M-x which-function-mode}を使用します。Which
+Functionモードは、グローバルなマイナーモードです。デフォルトでは、それをサポートする方法を知っている、すべてのメジャーモード(たとえばImenuをサポートするすべてのメジャーモード)に影響を与えます。変数@code{which-func-modes}の値を@code{t}(これは利用可能なすべてのメジャーモードをサポートすることを意味します)から、特定のメジャーモードのリストに変更することにより、これを制限することができます。
 
 @node Program Indent
 @section プログラムのインデント
@@ -609,9 +604,8 @@ Pairモードの追加機能を制御します:
 
 @item
 @vindex electric-pair-open-newline-between-pairs
-@code{electric-pair-open-newline-between-pairs}, when non-@code{nil}, makes
-inserting a newline between two adjacent pairs also automatically open an
-extra newline after point.
+@code{electric-pair-open-newline-between-pairs} ---
+非@code{nil}の場合、2つの隣接するペアの間での改行の挿入は、ポイントの後ろに自動的に追加の改行をオープンします。
 
 @item
 @vindex electric-pair-skip-whitespace
@@ -818,14 +812,13 @@ pageをフォーマットするために、@command{man}コマンドを実行し
 pageにジャンプする機能をもちます。詳細についてはManモードのバッファーで、@kbd{C-h m}をタイプしてください。
 
 @cindex sections of manual pages
-  Each man page belongs to one of ten or more @dfn{sections}, each named by a
-digit or by a digit and a letter.  Sometimes there are man pages with the
-same name in different sections.  To read a man page from a specific
-section, type @samp{@var{topic}(@var{section})} or @samp{@var{section}
-@var{topic}} when @kbd{M-x man} prompts for the topic.  For example, the man
-page for the C library function @code{chmod} is in section 2, but there is a
-shell command of the same name, whose man page is in section 1; to view the
-former, type @w{@kbd{M-x man @key{RET} chmod(2) @key{RET}}}.
+  それぞれのman
+pageは、1つ以上の@dfn{セクション(sections)}に属します。セクションの名前は数字または数字と文字です。同じ名前のman
+pageが、複数のセクションに存在することもあります。特定のセクションのman pageを読むには、@kbd{M-x
+man}がトピックの入力を求める際、@samp{@var{topic}(@var{section})}または@samp{@var{section}
+@var{topic}}とタイプします。たとえばCのライブラリー関数@code{chmod}はセクション2ですが、同じ名前のシェルコマンドのman
+pageはセクション1です。前者を閲覧するには、@w{@kbd{M-x man @key{RET} chmod(2)
+@key{RET}}}とタイプしてください。
 
 @vindex Man-switches
 @kindex M-n @r{(Man mode)}

@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 25.1\n"
 "POT-Creation-Date: 2017-11-28 07:15+0000\n"
-"PO-Revision-Date: 2016-10-02 16:24+0900\n"
+"PO-Revision-Date: 2017-12-03 02:20+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
-"Language-Team: HIRO project <h1r0p@outlook.jp>\n"
+"Language-Team: \n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1072,15 +1072,6 @@ msgstr "which-func-modes"
 
 #. type: Plain text
 #: original_texis/programs.texi:336
-#, fuzzy
-#| msgid ""
-#| "To either enable or disable Which Function mode, use the command @kbd{M-x "
-#| "which-function-mode}.  Which Function mode is a global minor mode.  By "
-#| "default, it takes effect in all major modes major modes that know how to "
-#| "support it (i.e., all the major modes that support Imenu).  You can "
-#| "restrict it to a specific list of major modes by changing the value of "
-#| "the variable @code{which-func-modes} from @code{t} (which means to "
-#| "support all available major modes) to a list of major mode names."
 msgid ""
 "To either enable or disable Which Function mode, use the command @kbd{M-x "
 "which-function-mode}.  Which Function mode is a global minor mode.  By "
@@ -2623,10 +2614,9 @@ msgstr ""
 
 #. type: vindex
 #: original_texis/programs.texi:880
-#, fuzzy, no-wrap
-#| msgid "electric-pair-mode"
+#, no-wrap
 msgid "electric-pair-preserve-balance"
-msgstr "electric-pair-mode"
+msgstr "electric-pair-preserve-balance"
 
 #. type: itemize
 #: original_texis/programs.texi:884
@@ -2640,10 +2630,9 @@ msgstr ""
 
 #. type: vindex
 #: original_texis/programs.texi:886
-#, fuzzy, no-wrap
-#| msgid "electric-pair-mode"
+#, no-wrap
 msgid "electric-pair-delete-adjacent-pairs"
-msgstr "electric-pair-mode"
+msgstr "electric-pair-delete-adjacent-pairs"
 
 #. type: itemize
 #: original_texis/programs.texi:890
@@ -2659,30 +2648,21 @@ msgstr ""
 #: original_texis/programs.texi:892
 #, no-wrap
 msgid "electric-pair-open-newline-between-pairs"
-msgstr ""
+msgstr "electric-pair-open-newline-between-pairs"
 
 #. type: itemize
 #: original_texis/programs.texi:896
-#, fuzzy
-#| msgid ""
-#| "@code{electric-pair-open-newline-between-pairs}, when non-@code{nil}, "
-#| "makes inserting inserting a newline between two adjacent pairs also "
-#| "automatically open and extra newline after point."
 msgid ""
 "@code{electric-pair-open-newline-between-pairs}, when non-@code{nil}, makes "
 "inserting a newline between two adjacent pairs also automatically open an "
 "extra newline after point."
-msgstr ""
-"@code{electric-pair-open-newline-between-pairs} --- 非@code{nil}の場合、2つの"
-"隣接するペアの間での改行の挿入は、ポイントの後ろに自動的に自動的に追加の改行"
-"をオープンします。"
+msgstr "@code{electric-pair-open-newline-between-pairs} --- 非@code{nil}の場合、2つの隣接するペアの間での改行の挿入は、ポイントの後ろに自動的に追加の改行をオープンします。"
 
 #. type: vindex
 #: original_texis/programs.texi:898
-#, fuzzy, no-wrap
-#| msgid "electric-pair-mode"
+#, no-wrap
 msgid "electric-pair-skip-whitespace"
-msgstr "electric-pair-mode"
+msgstr "electric-pair-skip-whitespace"
 
 #. type: itemize
 #: original_texis/programs.texi:902
@@ -3484,10 +3464,9 @@ msgstr ""
 
 #. type: findex
 #: original_texis/programs.texi:1196
-#, fuzzy, no-wrap
-#| msgid "woman"
+#, no-wrap
 msgid "man"
-msgstr "woman"
+msgstr "man"
 
 #. type: Plain text
 #: original_texis/programs.texi:1207
@@ -3521,17 +3500,6 @@ msgstr "sections of manual pages"
 
 #. type: Plain text
 #: original_texis/programs.texi:1218
-#, fuzzy
-#| msgid ""
-#| "Each man page belongs to one of ten or more @dfn{sections}, each named by "
-#| "a digit or by a digit and a letter.  Sometimes there are man pages with "
-#| "the same name in different sections.  To read a man page from a specific "
-#| "section, type @samp{@var{topic}(@var{section})} or @samp{@var{section} "
-#| "@var{topic}} when @kbd{M-x manual-entry} prompts for the topic.  For "
-#| "example, the man page for the C library function @code{chmod} is in "
-#| "section 2, but there is a shell command of the same name, whose man page "
-#| "is in section 1; to view the former, type @kbd{M-x manual-entry @key{RET} "
-#| "chmod(2) @key{RET}}."
 msgid ""
 "Each man page belongs to one of ten or more @dfn{sections}, each named by a "
 "digit or by a digit and a letter.  Sometimes there are man pages with the "
@@ -3541,15 +3509,7 @@ msgid ""
 "page for the C library function @code{chmod} is in section 2, but there is a "
 "shell command of the same name, whose man page is in section 1; to view the "
 "former, type @w{@kbd{M-x man @key{RET} chmod(2) @key{RET}}}."
-msgstr ""
-"それぞれのman pageは、1つ以上の@dfn{セクション(sections)}に属します。セクショ"
-"ンの名前は数字または数字と文字です。同じ名前のman pageが、複数のセクションに"
-"存在することもあります。特定のセクションのman pageを読むには、@kbd{M-x "
-"manual-entry}がトピックの入力を求める際、@samp{@var{topic}(@var{section})}ま"
-"たは@samp{@var{section} @var{topic}}とタイプします。たとえばCのライブラリー関"
-"数@code{chmod}はセクション2ですが、同じ名前のシェルコマンドのman pageはセク"
-"ション1です。前者を閲覧するには、@kbd{M-x manual-entry @key{RET} chmod(2) "
-"@key{RET}}とタイプしてください。"
+msgstr "それぞれのman pageは、1つ以上の@dfn{セクション(sections)}に属します。セクションの名前は数字または数字と文字です。同じ名前のman pageが、複数のセクションに存在することもあります。特定のセクションのman pageを読むには、@kbd{M-x man}がトピックの入力を求める際、@samp{@var{topic}(@var{section})}または@samp{@var{section} @var{topic}}とタイプします。たとえばCのライブラリー関数@code{chmod}はセクション2ですが、同じ名前のシェルコマンドのman pageはセクション1です。前者を閲覧するには、@w{@kbd{M-x man @key{RET} chmod(2) @key{RET}}}とタイプしてください。"
 
 #. type: vindex
 #: original_texis/programs.texi:1219
