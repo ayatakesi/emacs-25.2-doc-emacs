@@ -46,13 +46,8 @@ m}で作成されるバッファーのためのMessageモード(@ref{Sending
 Mail}を参照してください)、下位のシェルプロセスとの通信用のバッファーのためのShellモード(@ref{Interactive
 Shell}を参照してください)などが含まれます。
 
-  Usually, the major mode is automatically set by Emacs, when you first visit
-a file or create a buffer (@pxref{Choosing Modes}).  You can explicitly
-select a new major mode by using an @kbd{M-x} command.  Take the name of the
-mode and add @code{-mode} to get the name of the command to select that mode
-(e.g., @kbd{M-x lisp-mode} enters Lisp mode).  Since every buffer has
-exactly one major mode, there is no way to ``turn off'' a major mode;
-instead you must switch to a different one.
+  通常、メジャーモードは最初にファイルをvisitしたとき、またはバッファーを作成したときに、Emacsにより自動的にセットされます。@kbd{M-x}コマンドを使うことにより、新しいメジャーモードを明示的に選択することができます。モードの名前に@code{-mode}を追加することにより、モードを選択するコマンド名を得ることができます(たとえば、Lispモードを選択する場合は@kbd{M-x
+lisp-mode})。すべてのバッファーは厳密に1つのメジャーモードをもつので、メジャーモードを``オフ''にする方法はなく、かわりに他のメジャーモードに切り替えなければなりません。
 
 @vindex major-mode
   バッファーローカルな変数@code{major-mode}の値は、メジャーモードコマンドと同じ名前のシンボル(たとえば@code{lisp-mode})です。この変数は自動的にセットされます。あなた自身が変更するべきではありません。
@@ -79,18 +74,12 @@ File}を参照してください):
 @cindex mode hook
 @vindex text-mode-hook
 @vindex prog-mode-hook
-  Every major mode, apart from Fundamental mode, defines a @dfn{mode hook}, a
-customizable list of Lisp functions to run each time the mode is enabled in
-a buffer.  @xref{Hooks}, for more information about hooks.  Each mode hook
-is named after its major mode, e.g., Fortran mode has
-@code{fortran-mode-hook}.  Furthermore, all text-based major modes run
-@code{text-mode-hook}, and many programming language modes @footnote{More
-specifically, the modes which are ''derived'' from @code{prog-mode}
-(@pxref{Derived Modes,,, elisp, The Emacs Lisp Reference Manual}).}
-(including all those distributed with Emacs) run @code{prog-mode-hook},
-prior to running their own mode hooks.  Hook functions can look at the value
-of the variable @code{major-mode} to see which mode is actually being
-entered.
+  
+Fundamentalモード以外のすべてのメジャーモードは、@dfn{モードフック(mode
+hook)}を定義します。これはバッファーでそのモードが有効になるたびに実行される、カスタマイズ可能なLisp関数のリストです。フックに間する詳細は、@ref{Hooks}を参照してください。各モードフックはメジャーモード名の後に名前がつけられます。たとえばFortranモードのモードフックは、@code{fortran-mode-hook}です。さらに、すべてのテキストベースのメジャーモードは、@code{text-mode-hook}を実行し、多くの、プログラミング言語のモード(Emacsとともに配布されるものを含む)
+は、その言語モード自身のモードフックの前に、@code{prog-mode-hook}を実行します@footnote{より具体的には、そのモードは@code{prog-mode}から''派生''したモードです(@ref{Derived
+Modes,,, elisp, The Emacs Lisp Reference Manual}を参照)。}
+。フック関数は変数@code{major-mode}の値を調べて、どのモードに入ろうとしているか調べることができます。
 
   モードフックは、一般的にマイナーモードを有効にするために使用されます(@ref{Minor
 Modes}を参照してください)。たとえば以下の行をinitファイルに記述すると、すべてのテキストベースのメジャーモードでFlyspellマイナーモード(@ref{Spelling}を参照してください)を、Emacs
