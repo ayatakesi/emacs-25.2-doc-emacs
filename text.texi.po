@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 25.1\n"
 "POT-Creation-Date: 2017-11-28 07:15+0000\n"
-"PO-Revision-Date: 2016-10-02 16:14+0900\n"
+"PO-Revision-Date: 2017-12-03 02:06+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
-"Language-Team: HIRO project <h1r0p@outlook.jp>\n"
+"Language-Team: \n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -969,15 +969,6 @@ msgstr ""
 
 #. type: Plain text
 #: original_texis/text.texi:305
-#, fuzzy
-#| msgid ""
-#| "The definition of a paragraph depends on the major mode.  In Fundamental "
-#| "mode, as well as Text mode and related modes, a paragraph is separated "
-#| "each neighboring paragraph another by one or more @dfn{blank lines}---"
-#| "lines that are either empty, or consist solely of space, tab and/or "
-#| "formfeed characters.  In programming language modes, paragraphs are "
-#| "usually defined in a similar way, so that you can use the paragraph "
-#| "commands even though there are no paragraphs as such in a program."
 msgid ""
 "The definition of a paragraph depends on the major mode.  In Fundamental "
 "mode, as well as Text mode and related modes, a paragraph is separated from "
@@ -986,13 +977,7 @@ msgid ""
 "In programming language modes, paragraphs are usually defined in a similar "
 "way, so that you can use the paragraph commands even though there are no "
 "paragraphs as such in a program."
-msgstr ""
-"パラグラフの定義はメジャーモードに依存します。Fundamentalモード、同様にText"
-"モードとそれに関連するモードでは、パラグラフと、その前後のパラグラフを分ける"
-"のは１行以上の@dfn{空行} --- 空の行、スペースとタブだけからなる行、およびそれ"
-"らに改ページ文字がついた行 --- です。プログラミング言語に関するモードでは、通"
-"常パラグラフは同じような方法で定義されるので、パラグラフがないプログラムなど"
-"にたいしても、パラグラフのコマンドを使うことができます。"
+msgstr "パラグラフの定義はメジャーモードに依存します。Fundamentalモード、同様にTextモードとそれに関連するモードでは、パラグラフと、その隣接するパラグラフを分けるのは１行以上の@dfn{空行} --- 空の行、スペースとタブだけからなる行、およびそれらに改ページ文字がついた行 --- です。プログラミング言語に関するモードでは、通常パラグラフは同じような方法で定義されるので、パラグラフがないプログラムなどにたいしても、パラグラフのコマンドを使うことができます。"
 
 #. type: Plain text
 #: original_texis/text.texi:309
@@ -1336,21 +1321,11 @@ msgstr ""
 
 #. type: Plain text
 #: original_texis/text.texi:426
-#, fuzzy
-#| msgid ""
-#| "Electric Quote mode makes it easier to type curved quotes.  As you type "
-#| "characters it optionally converts @t{`} to @t{‘}, @t{'} to @t{’}, @t{``} "
-#| "to @t{“}, and @t{''} to @t{”}.  These conversions are suppressed in "
-#| "buffers whose coding systems cannot represent curved quote characters."
 msgid ""
 "Electric Quote mode makes it easier to type curved quotes.  As you type "
 "characters it optionally converts @t{`} to @t{‘}, @t{'} to @t{’}, @t{``} to "
 "@t{“}, and @t{''} to @t{”}."
-msgstr ""
-"Electric Quoteモードは、curved quotesのタイプを簡単にします。『@t{`}』を"
-"『@t{‘}』、『@t{'}』を『@t{’}』、『@t{``}』を『@t{“}』、『@t{''}』を『@t{”}』"
-"のように、タイプした文字を随意に変換できます。これらの変換は、curved quote文"
-"字を表示できないコーディングシステムのバッファーでは抑制されます。"
+msgstr "Electric Quoteモードは、curved quotesのタイプを簡単にします。『@t{`}』を『@t{‘}』、『@t{'}』を『@t{’}』、『@t{``}』を『@t{“}』、『@t{''}』を『@t{”}』のように、タイプした文字を随意に変換できます。"
 
 #. type: vindex
 #: original_texis/text.texi:427
@@ -3247,11 +3222,9 @@ msgstr "C-c C-c"
 
 #. type: table
 #: original_texis/text.texi:1083
-#, fuzzy
-#| msgid "Make the current heading line's body invisible (@code{hide-entry})."
 msgid ""
 "Make the current heading line's body invisible (@code{outline-hide-entry})."
-msgstr "カレントヘッダー行のボディーを非表示にします(@code{hide-entry})。"
+msgstr "カレントヘッダー行のボディーを非表示にします(@code{outline-hide-entry})。"
 
 #. type: item
 #: original_texis/text.texi:1083 original_texis/text.texi:1633
@@ -3261,11 +3234,9 @@ msgstr "C-c C-e"
 
 #. type: table
 #: original_texis/text.texi:1086
-#, fuzzy
-#| msgid "Make the current heading line's body visible (@code{show-entry})."
 msgid ""
 "Make the current heading line's body visible (@code{outline-show-entry})."
-msgstr "カレントヘッダー行のボディーを可視にします(@code{show-entry})。"
+msgstr "カレントヘッダー行のボディーを可視にします(@code{outline-show-entry})。"
 
 #. type: item
 #: original_texis/text.texi:1086 original_texis/text.texi:1937
@@ -3275,16 +3246,10 @@ msgstr "C-c C-d"
 
 #. type: table
 #: original_texis/text.texi:1089
-#, fuzzy
-#| msgid ""
-#| "Make everything under the current heading invisible, not including the "
-#| "heading itself (@code{hide-subtree})."
 msgid ""
 "Make everything under the current heading invisible, not including the "
 "heading itself (@code{outline-hide-subtree})."
-msgstr ""
-"カレントヘッダー行の配下のすべて(ヘッダー行自身は含まれません)を非表示にしま"
-"す(@code{hide-subtree})。"
+msgstr "カレントヘッダー行の配下のすべて(ヘッダー行自身は含まれません)を非表示にします(@code{outline-hide-subtree})。"
 
 #. type: item
 #: original_texis/text.texi:1089
@@ -3294,16 +3259,10 @@ msgstr "C-c C-s"
 
 #. type: table
 #: original_texis/text.texi:1092
-#, fuzzy
-#| msgid ""
-#| "Make everything under the current heading visible, including body, "
-#| "subheadings, and their bodies (@code{show-subtree})."
 msgid ""
 "Make everything under the current heading visible, including body, "
 "subheadings, and their bodies (@code{outline-show-subtree})."
-msgstr ""
-"カレントヘッダー行の配下のすべて(ボディー、サブヘッダーおよびそのボディーを含"
-"む)を可視にします(@code{show-subtree})。"
+msgstr "カレントヘッダー行の配下のすべて(ボディー、サブヘッダーおよびそのボディーを含む)を可視にします(@code{outline-show-subtree})。"
 
 #. type: item
 #: original_texis/text.texi:1092 original_texis/text.texi:1691
@@ -3313,16 +3272,10 @@ msgstr "C-c C-l"
 
 #. type: table
 #: original_texis/text.texi:1095
-#, fuzzy
-#| msgid ""
-#| "Make the body of the current heading line, and of all its subheadings, "
-#| "invisible (@code{hide-leaves})."
 msgid ""
 "Make the body of the current heading line, and of all its subheadings, "
 "invisible (@code{outline-hide-leaves})."
-msgstr ""
-"カレントヘッダー行のボディーと、すべてのサブヘッダーを非表示にします"
-"(@code{hide-leaves})。"
+msgstr "カレントヘッダー行のボディーと、すべてのサブヘッダーを非表示にします(@code{outline-hide-leaves})。"
 
 #. type: item
 #: original_texis/text.texi:1095 original_texis/text.texi:1694
@@ -3332,16 +3285,10 @@ msgstr "C-c C-k"
 
 #. type: table
 #: original_texis/text.texi:1098
-#, fuzzy
-#| msgid ""
-#| "Make all subheadings of the current heading line, at all levels, visible "
-#| "(@code{show-branches})."
 msgid ""
 "Make all subheadings of the current heading line, at all levels, visible "
 "(@code{outline-show-branches})."
-msgstr ""
-"カレントヘッダー行のサブヘッダーをすべてのレベルで可視にします(@code{show-"
-"branches})。"
+msgstr "カレントヘッダー行のサブヘッダーをすべてのレベルで可視にします(@code{outline-show-branches})。"
 
 #. type: item
 #: original_texis/text.texi:1098
@@ -3351,16 +3298,10 @@ msgstr "C-c C-i"
 
 #. type: table
 #: original_texis/text.texi:1101
-#, fuzzy
-#| msgid ""
-#| "Make immediate subheadings (one level down) of the current heading line "
-#| "visible (@code{show-children})."
 msgid ""
 "Make immediate subheadings (one level down) of the current heading line "
 "visible (@code{outline-show-children})."
-msgstr ""
-"カレントヘッダー行の一番近いサブヘッダー(1レベル下)を可視にします(@code{show-"
-"children})。"
+msgstr "カレントヘッダー行の一番近いサブヘッダー(1レベル下)を可視にします(@code{outline-show-children})。"
 
 #. type: item
 #: original_texis/text.texi:1101 original_texis/text.texi:1902
@@ -3370,10 +3311,8 @@ msgstr "C-c C-t"
 
 #. type: table
 #: original_texis/text.texi:1104
-#, fuzzy
-#| msgid "Make all body lines in the buffer invisible (@code{hide-body})."
 msgid "Make all body lines in the buffer invisible (@code{outline-hide-body})."
-msgstr "バッファーのすべてのボディー行を非表示にします(@code{hide-body})。"
+msgstr "バッファーのすべてのボディー行を非表示にします(@code{outline-hide-body})。"
 
 #. type: item
 #: original_texis/text.texi:1104 original_texis/text.texi:1916
@@ -3383,10 +3322,8 @@ msgstr "C-c C-a"
 
 #. type: table
 #: original_texis/text.texi:1106
-#, fuzzy
-#| msgid "Make all lines in the buffer visible (@code{show-all})."
 msgid "Make all lines in the buffer visible (@code{outline-show-all})."
-msgstr "バッファーのすべての行を可視にします(@code{show-all})。"
+msgstr "バッファーのすべての行を可視にします(@code{outline-show-all})。"
 
 #. type: item
 #: original_texis/text.texi:1106
@@ -3396,16 +3333,10 @@ msgstr "C-c C-q"
 
 #. type: table
 #: original_texis/text.texi:1109
-#, fuzzy
-#| msgid ""
-#| "Hide everything except the top @var{n} levels of heading lines "
-#| "(@code{hide-sublevels})."
 msgid ""
 "Hide everything except the top @var{n} levels of heading lines "
 "(@code{outline-hide-sublevels})."
-msgstr ""
-"上位@var{n}レベルのヘッダー行を除き、すべてを非表示にします(@code{hide-"
-"sublevels})。"
+msgstr "上位@var{n}レベルのヘッダー行を除き、すべてを非表示にします(@code{outline-hide-sublevels})。"
 
 #. type: item
 #: original_texis/text.texi:1109 original_texis/text.texi:1630
@@ -3415,32 +3346,23 @@ msgstr "C-c C-o"
 
 #. type: table
 #: original_texis/text.texi:1113
-#, fuzzy
-#| msgid ""
-#| "Hide everything except for the heading or body that point is in, plus the "
-#| "headings leading up from there to the top level of the outline "
-#| "(@code{hide-other})."
 msgid ""
 "Hide everything except for the heading or body that point is in, plus the "
 "headings leading up from there to the top level of the outline "
 "(@code{outline-hide-other})."
-msgstr ""
-"ポイントのあるヘッダー行またはボディー行と、そこから最上位までのレベルにある"
-"ヘッダーを除き、すべてを非表示にします(@code{hide-other})。"
+msgstr "ポイントのあるヘッダー行またはボディー行と、そこから最上位までのレベルにあるヘッダーを除き、すべてを非表示にします(@code{outline-hide-other})。"
 
 #. type: findex
 #: original_texis/text.texi:1115
-#, fuzzy, no-wrap
-#| msgid "hide-entry"
+#, no-wrap
 msgid "outline-hide-entry"
-msgstr "hide-entry"
+msgstr "outline-hide-entry"
 
 #. type: findex
 #: original_texis/text.texi:1116
-#, fuzzy, no-wrap
-#| msgid "show-entry"
+#, no-wrap
 msgid "outline-show-entry"
-msgstr "show-entry"
+msgstr "outline-show-entry"
 
 #. type: kindex
 #: original_texis/text.texi:1117
@@ -3456,36 +3378,24 @@ msgstr "C-c C-e @r{(Outline mode)}"
 
 #. type: Plain text
 #: original_texis/text.texi:1124
-#, fuzzy
-#| msgid ""
-#| "The simplest of these commands are @kbd{C-c C-c} (@code{hide-entry}), "
-#| "which hides the body lines directly following the current heading line, "
-#| "and @kbd{C-c C-e} (@code{show-entry}), which reveals them.  Subheadings "
-#| "and their bodies are not affected."
 msgid ""
 "The simplest of these commands are @kbd{C-c C-c} (@code{outline-hide-"
 "entry}), which hides the body lines directly following the current heading "
 "line, and @kbd{C-c C-e} (@code{outline-show-entry}), which reveals them.  "
 "Subheadings and their bodies are not affected."
-msgstr ""
-"これらのコマンドのうち、カレントヘッダー行に直接続くボディー行を非表示にする"
-"@kbd{C-c C-c} (@code{hide-entry})と、それらを可視にする@kbd{C-c C-e} "
-"(@code{show-entry})が一番簡単なコマンドです。サブヘッダーとそれらのボディーは"
-"影響を受けません。"
+msgstr "これらのコマンドのうち、カレントヘッダー行に直接続くボディー行を非表示にする@kbd{C-c C-c} (@code{outline-hide-entry})と、それらを可視にする@kbd{C-c C-e} (@code{outline-show-entry})が一番簡単なコマンドです。サブヘッダーとそれらのボディーは影響を受けません。"
 
 #. type: findex
 #: original_texis/text.texi:1125
-#, fuzzy, no-wrap
-#| msgid "hide-subtree"
+#, no-wrap
 msgid "outline-hide-subtree"
-msgstr "hide-subtree"
+msgstr "outline-hide-subtree"
 
 #. type: findex
 #: original_texis/text.texi:1126
-#, fuzzy, no-wrap
-#| msgid "show-subtree"
+#, no-wrap
 msgid "outline-show-subtree"
-msgstr "show-subtree"
+msgstr "outline-show-subtree"
 
 #. type: kindex
 #: original_texis/text.texi:1127
@@ -3507,43 +3417,30 @@ msgstr "subtree (Outline mode)"
 
 #. type: Plain text
 #: original_texis/text.texi:1134
-#, fuzzy
-#| msgid ""
-#| "The commands @kbd{C-c C-d} (@code{hide-subtree}) and @kbd{C-c C-s} "
-#| "(@code{show-subtree}) are more powerful.  They apply to the current "
-#| "heading line's @dfn{subtree}: its body, all of its subheadings, both "
-#| "direct and indirect, and all of their bodies."
 msgid ""
 "The commands @kbd{C-c C-d} (@code{outline-hide-subtree}) and @kbd{C-c C-s} "
 "(@code{outline-show-subtree}) are more powerful.  They apply to the current "
 "heading line's @dfn{subtree}: its body, all of its subheadings, both direct "
 "and indirect, and all of their bodies."
-msgstr ""
-"コマンド@kbd{C-c C-d} (@code{hide-subtree})および@kbd{C-c C-s} (@code{show-"
-"subtree})は、より強力です。これらはカレントヘッダー行の@dfn{サブツリー} --- "
-"つまりカレントヘッダー行のボディーと、すべての直接または間接のサブヘッダーと"
-"そのボディー --- に適用されます。"
+msgstr "コマンド@kbd{C-c C-d} (@code{outline-hide-subtree})および@kbd{C-c C-s} (@code{outline-show-subtree})は、より強力です。これらはカレントヘッダー行の@dfn{サブツリー} --- つまりカレントヘッダー行のボディーと、すべての直接または間接のサブヘッダーとそのボディー --- に適用されます。"
 
 #. type: findex
 #: original_texis/text.texi:1135
-#, fuzzy, no-wrap
-#| msgid "outline-level"
+#, no-wrap
 msgid "outline-hide-leaves"
-msgstr "outline-level"
+msgstr "outline-hide-leaves"
 
 #. type: findex
 #: original_texis/text.texi:1136
-#, fuzzy, no-wrap
-#| msgid "show-branches"
+#, no-wrap
 msgid "outline-show-branches"
-msgstr "show-branches"
+msgstr "outline-show-branches"
 
 #. type: findex
 #: original_texis/text.texi:1137
-#, fuzzy, no-wrap
-#| msgid "show-children"
+#, no-wrap
 msgid "outline-show-children"
-msgstr "show-children"
+msgstr "outline-show-children"
 
 #. type: kindex
 #: original_texis/text.texi:1138
@@ -3565,15 +3462,6 @@ msgstr "C-c C-i @r{(Outline mode)}"
 
 #. type: Plain text
 #: original_texis/text.texi:1149
-#, fuzzy
-#| msgid ""
-#| "The command @kbd{C-c C-l} (@code{hide-leaves}) hides the body of the "
-#| "current heading line as well as all the bodies in its subtree; the "
-#| "subheadings themselves are left visible.  The command @kbd{C-c C-k} "
-#| "(@code{show-branches}) reveals the subheadings, if they had previously "
-#| "been hidden (e.g., by @kbd{C-c C-d}).  The command @kbd{C-c C-i} "
-#| "(@code{show-children}) is a weaker version of this; it reveals just the "
-#| "direct subheadings, i.e., those one level down."
 msgid ""
 "The command @kbd{C-c C-l} (@code{outline-hide-leaves}) hides the body of the "
 "current heading line as well as all the bodies in its subtree; the "
@@ -3582,20 +3470,13 @@ msgid ""
 "previously been hidden (e.g., by @kbd{C-c C-d}).  The command @kbd{C-c C-i} "
 "(@code{outline-show-children}) is a weaker version of this; it reveals just "
 "the direct subheadings, i.e., those one level down."
-msgstr ""
-"コマンド@kbd{C-c C-l} (@code{hide-leaves})は、カレントヘッダー行のボディー"
-"と、サブツリーのボディーをすべて非表示にします(サブヘッダー自身は表示されま"
-"す)。コマンド@kbd{C-c C-k} (@code{show-branches})は、(たとえば@kbd{C-c C-d})"
-"などで)前に非表示にされたサブヘッダーを可視にします。コマンド@kbd{C-c C-i} "
-"(@code{show-children})はこれの穏やかなバージョンで、直接的なサブヘッダー(たと"
-"えば1レベル下のサブヘッダー)を可視にします。"
+msgstr "コマンド@kbd{C-c C-l} (@code{outline-hide-leaves})は、カレントヘッダー行のボディーと、サブツリーのボディーをすべて非表示にします(サブヘッダー自身は表示されます)。コマンド@kbd{C-c C-k} (@code{outline-show-branches})は、(たとえば@kbd{C-c C-d})などで)前に非表示にされたサブヘッダーを可視にします。コマンド@kbd{C-c C-i} (@code{outline-show-children})はこれの穏やかなバージョンで、直接的なサブヘッダー(たとえば1レベル下のサブヘッダー)を可視にします。"
 
 #. type: findex
 #: original_texis/text.texi:1150
-#, fuzzy, no-wrap
-#| msgid "hide-other"
+#, no-wrap
 msgid "outline-hide-other"
-msgstr "hide-other"
+msgstr "outline-hide-other"
 
 #. type: kindex
 #: original_texis/text.texi:1151
@@ -3605,34 +3486,24 @@ msgstr "C-c C-o @r{(Outline mode)}"
 
 #. type: Plain text
 #: original_texis/text.texi:1157
-#, fuzzy
-#| msgid ""
-#| "The command @kbd{C-c C-o} (@code{hide-other}) hides everything except the "
-#| "entry that point is in, plus its parents (the headers leading up from "
-#| "there to top level in the outline) and the top level headings."
 msgid ""
 "The command @kbd{C-c C-o} (@code{outline-hide-other}) hides everything "
 "except the entry that point is in, plus its parents (the headers leading up "
 "from there to top level in the outline) and the top level headings.  It also "
 "reveals body lines preceding the first heading in the buffer."
-msgstr ""
-"コマンド@kbd{C-c C-o} (@code{hide-other})は、ポイントのあるエントリーと、その"
-"祖先(アウトライン構造上でそこから最上位レベルに至るまでのヘッダー)、および"
-"トップレベルのヘッダーを除き、すべてを非表示にします。"
+msgstr "コマンド@kbd{C-c C-o} (@code{outline-hide-other})は、ポイントのあるエントリーと、その祖先(アウトライン構造上でそこから最上位レベルに至るまでのヘッダー)、およびトップレベルのヘッダーを除き、すべてを非表示にします。このコマンドは、そのバッファーの最初のヘッダーの前のボディー行も表示します。"
 
 #. type: findex
 #: original_texis/text.texi:1158
-#, fuzzy, no-wrap
-#| msgid "outline-mode-hook"
+#, no-wrap
 msgid "outline-hide-body"
-msgstr "outline-mode-hook"
+msgstr "outline-hide-body"
 
 #. type: findex
 #: original_texis/text.texi:1159
-#, fuzzy, no-wrap
-#| msgid "outline-level"
+#, no-wrap
 msgid "outline-show-all"
-msgstr "outline-level"
+msgstr "outline-show-all"
 
 #. type: kindex
 #: original_texis/text.texi:1160
@@ -3660,16 +3531,6 @@ msgstr "C-c C-q @r{(Outline mode)}"
 
 #. type: Plain text
 #: original_texis/text.texi:1176
-#, fuzzy
-#| msgid ""
-#| "The remaining commands affect the whole buffer.  @kbd{C-c C-t} "
-#| "(@code{hide-body}) makes all body lines invisible, so that you see just "
-#| "the outline structure (as a special exception, it will not hide lines at "
-#| "the top of the file, preceding the first header line, even though these "
-#| "are technically body lines).  @kbd{C-c C-a} (@code{show-all}) makes all "
-#| "lines visible.  @kbd{C-c C-q} (@code{hide-sublevels}) hides all but the "
-#| "top level headings; with a numeric argument @var{n}, it hides everything "
-#| "except the top @var{n} levels of heading lines."
 msgid ""
 "The remaining commands affect the whole buffer.  @kbd{C-c C-t} "
 "(@code{outline-hide-body}) makes all body lines invisible, so that you see "
@@ -3682,15 +3543,7 @@ msgid ""
 "@var{n}, it hides everything except the top @var{n} levels of heading "
 "lines.  Note that it completely reveals all the @var{n} top levels and the "
 "body lines before the first heading."
-msgstr ""
-"残りのコマンドは、バッファー全体に作用するコマンドです。@kbd{C-c C-t} "
-"(@code{hide-body})はすべてのボディー行を非表示にするので、アウトライン構造だ"
-"けを見ることができます(特別な例外として、ファイルの最初にあるヘッダー行より前"
-"の行は、技術的に言うとボディー行ですが、これらは非表示になりません)。@kbd{C-"
-"c C-a} (@code{show-all})はすべての行を可視にします。@kbd{C-c C-q} "
-"(@code{hide-sublevels})は最上位のヘッダーを除き、すべてを非表示にします。数引"
-"数@var{n}を指定すると、上位@var{n}レベルのヘッダー行を除き、すべてを非表示に"
-"します。"
+msgstr "残りのコマンドは、バッファー全体に作用するコマンドです。@kbd{C-c C-t} (@code{outline-hide-body})はすべてのボディー行を非表示にするので、アウトライン構造だけを見ることができます(特別な例外として、ファイルの最初にあるヘッダー行より前の行は、技術的に言うとボディー行ですが、これらは非表示になりません)。@kbd{C-c C-a} (@code{outline-show-all})はすべての行を可視にします。@kbd{C-c C-q} (@code{outline-hide-sublevels})は、カレントのヘッダー行(ポイントがヘッダー行にないときのデフォルトは1行目)の位置、またはその上にある最上位のヘッダーを除き、すべてを非表示にします。数引数@var{n}を指定すると、上位@var{n}レベルのヘッダー行を除き、すべてを非表示にします。この場合、上位@var{n}レベルと、最初のヘッダーの前のボディー行が表示されることに注意してください。"
 
 #. type: anchor{#1}
 #: original_texis/text.texi:1178
@@ -3819,22 +3672,12 @@ msgstr ""
 
 #. type: Plain text
 #: original_texis/text.texi:1224
-#, fuzzy
-#| msgid ""
-#| "Consider an Outline mode buffer with all the text and subheadings under "
-#| "level-1 headings hidden.  To look at what is hidden under one of these "
-#| "headings, you could use @kbd{C-c C-e} (@kbd{M-x show-entry}) to expose "
-#| "the body, or @kbd{C-c C-i} to expose the child (level-2) headings."
 msgid ""
 "Consider an Outline mode buffer with all the text and subheadings under "
 "level-1 headings hidden.  To look at what is hidden under one of these "
 "headings, you could use @kbd{C-c C-e} (@kbd{M-x outline-show-entry})  to "
 "expose the body, or @kbd{C-c C-i} to expose the child (level-2)  headings."
-msgstr ""
-"すべてのテキストと、レベル1より下のレベルが非表示になっているOutlineモードの"
-"バッファーを考えてください。それらのヘッダーの下に何が隠れているか見るには、"
-"@kbd{C-c C-e} (@kbd{M-x show-entry})でボディーを可視にするか、@kbd{C-c C-i}で"
-"その子ヘッダー(レベル2)を可視にすることができます。"
+msgstr "すべてのテキストと、レベル1より下のレベルが非表示になっているOutlineモードのバッファーを考えてください。それらのヘッダーの下に何が隠れているか見るには、@kbd{C-c C-e} (@kbd{M-x outline-show-entry})でボディーを可視にするか、@kbd{C-c C-i}でその子ヘッダー(レベル2)を可視にすることができます。"
 
 #. type: kindex
 #: original_texis/text.texi:1225
@@ -3871,15 +3714,6 @@ msgstr ""
 
 #. type: Plain text
 #: original_texis/text.texi:1244
-#, fuzzy
-#| msgid ""
-#| "When zooming in on a heading, to see only the child subheadings specify a "
-#| "numeric argument: @kbd{C-u C-c C-z}.  The number of levels of children "
-#| "can be specified too (compare @kbd{M-x show-children}), e.g., @kbd{M-2 C-"
-#| "c C-z} exposes two levels of child subheadings.  Alternatively, the body "
-#| "can be specified with a negative argument: @kbd{M-- C-c C-z}.  The whole "
-#| "subtree can be expanded, similarly to @kbd{C-c C-s} (@kbd{M-x show-"
-#| "subtree}), by specifying a zero argument: @kbd{M-0 C-c C-z}."
 msgid ""
 "When zooming in on a heading, to see only the child subheadings specify a "
 "numeric argument: @kbd{C-u C-c C-z}.  The number of levels of children can "
@@ -3889,13 +3723,7 @@ msgid ""
 "@w{@kbd{M-- C-c C-z}}.  The whole subtree can be expanded, similarly to "
 "@kbd{C-c C-s} (@kbd{M-x outline-show-subtree}), by specifying a zero "
 "argument: @w{@kbd{M-0 C-c C-z}}."
-msgstr ""
-"ヘッダーにズームインしているときに、それらの子サブヘッダーを見るには@kbd{C-u "
-"C-c C-z}のように数引数を指定します。何レベル下の子かを指定することもできます"
-"(@kbd{M-x show-children}に相当します)。たとえば@kbd{M-2 C-c C-z}は2レベルの子"
-"サブヘッダーを可視にします。ボディーを指定するには@kbd{M-- C-c C-z}のように負"
-"の引数を指定します。@kbd{C-c C-s} (@kbd{M-x show-subtree})のようにサブツリー"
-"全体を展開するには、@kbd{M-0 C-c C-z}のように引数に0を指定します。"
+msgstr "ヘッダーにズームインしているときに、それらの子サブヘッダーを見るには@kbd{C-u C-c C-z}のように数引数を指定します。何レベル下の子かを指定することもできます(@kbd{M-x outline-show-children}に相当します)。たとえば@w{@kbd{M-2 C-c C-z}}は2レベルの子サブヘッダーを可視にします。ボディーを指定するには@w{@kbd{M-- C-c C-z}}のように負の引数を指定します。@kbd{C-c C-s} (@kbd{M-x outline-show-subtree})のようにサブツリー全体を展開するには、@w{@kbd{M-0 C-c C-z}}のように引数に0を指定します。"
 
 #. type: Plain text
 #: original_texis/text.texi:1250
@@ -3940,19 +3768,11 @@ msgstr ""
 
 #. type: Plain text
 #: original_texis/text.texi:1262
-#, fuzzy
-#| msgid ""
-#| "To cancel the narrowing of a fold without hiding the text and "
-#| "subheadings, specify a negative argument.  For example, @kbd{M--2 C-c C-"
-#| "x} exits two folds and leaves the text and subheadings exposed."
 msgid ""
 "To cancel the narrowing of a fold without hiding the text and subheadings, "
 "specify a negative argument.  For example, @w{@kbd{M--2 C-c C-x}} exits two "
 "folds and leaves the text and subheadings exposed."
-msgstr ""
-"テキストとサブヘッダーを非表示にせずに、フォールドのナローイングを取り消すに"
-"は、負の引数を指定します。たとえば、@kbd{M--2 C-c C-x}は2つのフォールドを抜け"
-"出し、テキストとサブヘッダーは表示されたままにします。"
+msgstr "テキストとサブヘッダーを非表示にせずに、フォールドのナローイングを取り消すには、負の引数を指定します。たとえば、@w{@kbd{M--2 C-c C-x}}は2つのフォールドを抜け出し、テキストとサブヘッダーは表示されたままにします。"
 
 #. type: Plain text
 #: original_texis/text.texi:1265

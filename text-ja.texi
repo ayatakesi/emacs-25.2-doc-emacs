@@ -224,13 +224,9 @@ Commands}を参照してください)。
 C-w}は、パラグラフの周囲またはポイントの後ろをkillします。@kbd{M-h}は、ポイント位置のパラグラフの先頭にポイントを、最後にマークを配します。ポイントがパラグラフの間(連続する空行の中、または境界)にある場合、@kbd{M-h}はポイントの後ろに続くパラグラフの周囲にリージョンをセットします。パラグラフの最初の行の前に空行がある場合、その空行はリージョンに含まれます。
 リージョンがすでにアクティブの場合、このコマンドはポイントを変更せずにマークをセットします。連続する@kbd{M-h}は、マークをパラグラフ単位で先にセットします。
 
-  The definition of a paragraph depends on the major mode.  In Fundamental
-mode, as well as Text mode and related modes, a paragraph is separated from
-neighboring paragraphs by one or more @dfn{blank lines}---lines that are
-either empty, or consist solely of space, tab and/or formfeed characters.
-In programming language modes, paragraphs are usually defined in a similar
-way, so that you can use the paragraph commands even though there are no
-paragraphs as such in a program.
+  パラグラフの定義はメジャーモードに依存します。Fundamentalモード、同様にTextモードとそれに関連するモードでは、パラグラフと、その隣接するパラグラフを分けるのは１行以上の@dfn{空行}
+--- 空の行、スペースとタブだけからなる行、およびそれらに改ページ文字がついた行 ---
+です。プログラミング言語に関するモードでは、通常パラグラフは同じような方法で定義されるので、パラグラフがないプログラムなどにたいしても、パラグラフのコマンドを使うことができます。
 
   Textモードでは、インデントされた行自体では、パラグラフの区切りには@emph{ならない}ことに注意してください。インデントされた行をパラグラフの分割に使用したい場合は、かわりにParagraph-Indent
 Textモードを使用します。@ref{Text Mode}を参照してください。
@@ -318,9 +314,8 @@ convention(曲クォート方式)があります。これは@t{‘like this’}�
 this”}のように、左右のシングルクォーテーションマークやダブルクォーテーションマークを使用します。テキストファイルにおいては、typewriter
 quotesはシンプルで可搬性があり、curved quotesはあいまいさが少なく見栄えもよいです。
 
-  Electric Quote mode makes it easier to type curved quotes.  As you type
-characters it optionally converts @t{`} to @t{‘}, @t{'} to @t{’}, @t{``} to
-@t{“}, and @t{''} to @t{”}.
+  Electric Quoteモードは、curved
+quotesのタイプを簡単にします。『@t{`}』を『@t{‘}』、『@t{'}』を『@t{’}』、『@t{``}』を『@t{“}』、『@t{''}』を『@t{”}』のように、タイプした文字を随意に変換できます。
 
 @vindex electric-quote-paragraph
 @vindex electric-quote-comment
@@ -750,55 +745,45 @@ C-u} (@code{outline-up-heading})は、より浅くネストされたヘッダー
 
 @table @kbd
 @item C-c C-c
-Make the current heading line's body invisible (@code{outline-hide-entry}).
+カレントヘッダー行のボディーを非表示にします(@code{outline-hide-entry})。
 @item C-c C-e
-Make the current heading line's body visible (@code{outline-show-entry}).
+カレントヘッダー行のボディーを可視にします(@code{outline-show-entry})。
 @item C-c C-d
-Make everything under the current heading invisible, not including the
-heading itself (@code{outline-hide-subtree}).
+カレントヘッダー行の配下のすべて(ヘッダー行自身は含まれません)を非表示にします(@code{outline-hide-subtree})。
 @item C-c C-s
-Make everything under the current heading visible, including body,
-subheadings, and their bodies (@code{outline-show-subtree}).
+カレントヘッダー行の配下のすべて(ボディー、サブヘッダーおよびそのボディーを含む)を可視にします(@code{outline-show-subtree})。
 @item C-c C-l
-Make the body of the current heading line, and of all its subheadings,
-invisible (@code{outline-hide-leaves}).
+カレントヘッダー行のボディーと、すべてのサブヘッダーを非表示にします(@code{outline-hide-leaves})。
 @item C-c C-k
-Make all subheadings of the current heading line, at all levels, visible
-(@code{outline-show-branches}).
+カレントヘッダー行のサブヘッダーをすべてのレベルで可視にします(@code{outline-show-branches})。
 @item C-c C-i
-Make immediate subheadings (one level down) of the current heading line
-visible (@code{outline-show-children}).
+カレントヘッダー行の一番近いサブヘッダー(1レベル下)を可視にします(@code{outline-show-children})。
 @item C-c C-t
-Make all body lines in the buffer invisible (@code{outline-hide-body}).
+バッファーのすべてのボディー行を非表示にします(@code{outline-hide-body})。
 @item C-c C-a
-Make all lines in the buffer visible (@code{outline-show-all}).
+バッファーのすべての行を可視にします(@code{outline-show-all})。
 @item C-c C-q
-Hide everything except the top @var{n} levels of heading lines
-(@code{outline-hide-sublevels}).
+上位@var{n}レベルのヘッダー行を除き、すべてを非表示にします(@code{outline-hide-sublevels})。
 @item C-c C-o
-Hide everything except for the heading or body that point is in, plus the
-headings leading up from there to the top level of the outline
-(@code{outline-hide-other}).
+ポイントのあるヘッダー行またはボディー行と、そこから最上位までのレベルにあるヘッダーを除き、すべてを非表示にします(@code{outline-hide-other})。
 @end table
 
 @findex outline-hide-entry
 @findex outline-show-entry
 @kindex C-c C-c @r{(Outline mode)}
 @kindex C-c C-e @r{(Outline mode)}
-  The simplest of these commands are @kbd{C-c C-c}
-(@code{outline-hide-entry}), which hides the body lines directly following
-the current heading line, and @kbd{C-c C-e} (@code{outline-show-entry}),
-which reveals them.  Subheadings and their bodies are not affected.
+  これらのコマンドのうち、カレントヘッダー行に直接続くボディー行を非表示にする@kbd{C-c C-c}
+(@code{outline-hide-entry})と、それらを可視にする@kbd{C-c C-e}
+(@code{outline-show-entry})が一番簡単なコマンドです。サブヘッダーとそれらのボディーは影響を受けません。
 
 @findex outline-hide-subtree
 @findex outline-show-subtree
 @kindex C-c C-s @r{(Outline mode)}
 @kindex C-c C-d @r{(Outline mode)}
 @cindex subtree (Outline mode)
-  The commands @kbd{C-c C-d} (@code{outline-hide-subtree}) and @kbd{C-c C-s}
-(@code{outline-show-subtree}) are more powerful.  They apply to the current
-heading line's @dfn{subtree}: its body, all of its subheadings, both direct
-and indirect, and all of their bodies.
+  コマンド@kbd{C-c C-d} (@code{outline-hide-subtree})および@kbd{C-c C-s}
+(@code{outline-show-subtree})は、より強力です。これらはカレントヘッダー行の@dfn{サブツリー} ---
+つまりカレントヘッダー行のボディーと、すべての直接または間接のサブヘッダーとそのボディー --- に適用されます。
 
 @findex outline-hide-leaves
 @findex outline-show-branches
@@ -806,20 +791,16 @@ and indirect, and all of their bodies.
 @kindex C-c C-l @r{(Outline mode)}
 @kindex C-c C-k @r{(Outline mode)}
 @kindex C-c C-i @r{(Outline mode)}
-  The command @kbd{C-c C-l} (@code{outline-hide-leaves}) hides the body of the
-current heading line as well as all the bodies in its subtree; the
-subheadings themselves are left visible.  The command @kbd{C-c C-k}
-(@code{outline-show-branches}) reveals the subheadings, if they had
-previously been hidden (e.g., by @kbd{C-c C-d}).  The command @kbd{C-c C-i}
-(@code{outline-show-children}) is a weaker version of this; it reveals just
-the direct subheadings, i.e., those one level down.
+  コマンド@kbd{C-c C-l}
+(@code{outline-hide-leaves})は、カレントヘッダー行のボディーと、サブツリーのボディーをすべて非表示にします(サブヘッダー自身は表示されます)。コマンド@kbd{C-c
+C-k} (@code{outline-show-branches})は、(たとえば@kbd{C-c
+C-d})などで)前に非表示にされたサブヘッダーを可視にします。コマンド@kbd{C-c C-i}
+(@code{outline-show-children})はこれの穏やかなバージョンで、直接的なサブヘッダー(たとえば1レベル下のサブヘッダー)を可視にします。
 
 @findex outline-hide-other
 @kindex C-c C-o @r{(Outline mode)}
-  The command @kbd{C-c C-o} (@code{outline-hide-other}) hides everything
-except the entry that point is in, plus its parents (the headers leading up
-from there to top level in the outline) and the top level headings.  It also
-reveals body lines preceding the first heading in the buffer.
+  コマンド@kbd{C-c C-o}
+(@code{outline-hide-other})は、ポイントのあるエントリーと、その祖先(アウトライン構造上でそこから最上位レベルに至るまでのヘッダー)、およびトップレベルのヘッダーを除き、すべてを非表示にします。このコマンドは、そのバッファーの最初のヘッダーの前のボディー行も表示します。
 
 @findex outline-hide-body
 @findex outline-show-all
@@ -827,17 +808,10 @@ reveals body lines preceding the first heading in the buffer.
 @kindex C-c C-a @r{(Outline mode)}
 @findex hide-sublevels
 @kindex C-c C-q @r{(Outline mode)}
-  The remaining commands affect the whole buffer.  @kbd{C-c C-t}
-(@code{outline-hide-body}) makes all body lines invisible, so that you see
-just the outline structure (as a special exception, it will not hide lines
-at the top of the file, preceding the first header line, even though these
-are technically body lines).  @kbd{C-c C-a} (@code{outline-show-all}) makes
-all lines visible.  @kbd{C-c C-q} (@code{outline-hide-sublevels}) hides all
-but the top level headings at and above the level of the current heading
-line (defaulting to 1 if point is not on a heading); with a numeric argument
-@var{n}, it hides everything except the top @var{n} levels of heading
-lines.  Note that it completely reveals all the @var{n} top levels and the
-body lines before the first heading.
+  残りのコマンドは、バッファー全体に作用するコマンドです。@kbd{C-c C-t}
+(@code{outline-hide-body})はすべてのボディー行を非表示にするので、アウトライン構造だけを見ることができます(特別な例外として、ファイルの最初にあるヘッダー行より前の行は、技術的に言うとボディー行ですが、これらは非表示になりません)。@kbd{C-c
+C-a} (@code{outline-show-all})はすべての行を可視にします。@kbd{C-c C-q}
+(@code{outline-hide-sublevels})は、カレントのヘッダー行(ポイントがヘッダー行にないときのデフォルトは1行目)の位置、またはその上にある最上位のヘッダーを除き、すべてを非表示にします。数引数@var{n}を指定すると、上位@var{n}レベルのヘッダー行を除き、すべてを非表示にします。この場合、上位@var{n}レベルと、最初のヘッダーの前のボディー行が表示されることに注意してください。
 
 @anchor{Outline Search}
 @findex reveal-mode
@@ -868,10 +842,9 @@ b}や他のEmacsコマンドで、通常のやり方でウィンドウにそれ�
   Foldoutパッケージは、OutlineモードおよびOutline minorモードを、フォールディング(folding:
 折り畳み)コマンドで拡張します。フォールディングのアイデアは、アウトラインのネストされた部分にたいして、それに関連する部分と、より高いレベルが非表示のときに、それにズームインするというものです。
 
-  Consider an Outline mode buffer with all the text and subheadings under
-level-1 headings hidden.  To look at what is hidden under one of these
-headings, you could use @kbd{C-c C-e} (@kbd{M-x outline-show-entry})  to
-expose the body, or @kbd{C-c C-i} to expose the child (level-2)  headings.
+  すべてのテキストと、レベル1より下のレベルが非表示になっているOutlineモードのバッファーを考えてください。それらのヘッダーの下に何が隠れているか見るには、@kbd{C-c
+C-e} (@kbd{M-x outline-show-entry})でボディーを可視にするか、@kbd{C-c
+C-i}でその子ヘッダー(レベル2)を可視にすることができます。
 
 @kindex C-c C-z
 @findex foldout-zoom-subtree
@@ -879,14 +852,13 @@ expose the body, or @kbd{C-c C-i} to expose the child (level-2)  headings.
 foldout-zoom-subtree})を使います。これはそのヘッダーのボディーと、その子サブヘッダーを可視にして、バッファーをナローイングするので、@w{レベル1}にヘッダーとボディー、それにレベル2のヘッダーだけが可視になります。そのうちの1つのレベル2ヘッダーの下を見るには、カーソル位置をそのヘッダーに移動して、もう一度@kbd{C-c
 C-z}を使用します。これにより、そのレベル2ヘッダーのボディーと、レベル3の子サブヘッダーが可視になり、バッファーが再びナローイングされます。連続して好きなだけサブヘッダーをズームインすることができます。モードラインの文字列には、今どの深さにいるのかが表示されます。
 
-  When zooming in on a heading, to see only the child subheadings specify a
-numeric argument: @kbd{C-u C-c C-z}.  The number of levels of children can
-be specified too (compare @kbd{M-x outline-show-children}), e.g.,
-@w{@kbd{M-2 C-c C-z}} exposes two levels of child subheadings.
-Alternatively, the body can be specified with a negative argument:
-@w{@kbd{M-- C-c C-z}}.  The whole subtree can be expanded, similarly to
-@kbd{C-c C-s} (@kbd{M-x outline-show-subtree}), by specifying a zero
-argument: @w{@kbd{M-0 C-c C-z}}.
+  ヘッダーにズームインしているときに、それらの子サブヘッダーを見るには@kbd{C-u C-c
+C-z}のように数引数を指定します。何レベル下の子かを指定することもできます(@kbd{M-x
+outline-show-children}に相当します)。たとえば@w{@kbd{M-2 C-c
+C-z}}は2レベルの子サブヘッダーを可視にします。ボディーを指定するには@w{@kbd{M-- C-c
+C-z}}のように負の引数を指定します。@kbd{C-c C-s} (@kbd{M-x
+outline-show-subtree})のようにサブツリー全体を展開するには、@w{@kbd{M-0 C-c
+C-z}}のように引数に0を指定します。
 
   ズームインしている時でも、Outlineモードの表示および非表示の関数は、Foldoutに干渉せずに使用できます。バッファーがナローイングされているので、グローバルな編集操作は、ズームインされたヘッダーのテキストだけに影響します、これは特定のチャプターやセクションに変更を限定するのに便利です。
 
@@ -895,9 +867,8 @@ argument: @w{@kbd{M-0 C-c C-z}}.
   フォールドのズームを取り消す(抜ける)には、@kbd{C-c C-x} (@kbd{M-x
 foldout-exit-fold})を使用します。これは最上位レベルのヘッダーの配下のすべてのテキストと、サブヘッダーを非表示にして、バッファーの以前のビューに戻ります。数引数はフォールドを何レベル抜けるかを指定します。0を指定するとすべてのフォールドを抜けます。
 
-  To cancel the narrowing of a fold without hiding the text and subheadings,
-specify a negative argument.  For example, @w{@kbd{M--2 C-c C-x}} exits two
-folds and leaves the text and subheadings exposed.
+  テキストとサブヘッダーを非表示にせずに、フォールドのナローイングを取り消すには、負の引数を指定します。たとえば、@w{@kbd{M--2 C-c
+C-x}}は2つのフォールドを抜け出し、テキストとサブヘッダーは表示されたままにします。
 
   Foldoutモードはフォールドへの出入りと、非表示のテキストを表示するためのマウスコマンドも提供します:
 
