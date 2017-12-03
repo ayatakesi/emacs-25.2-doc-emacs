@@ -932,7 +932,7 @@ Formats}で見ることができます。短く言うと、@acronym{URL}は以�
 @end table
 
 @noindent
-@var{proto} can be one of:
+@var{proto}には以下の1つを指定します:
 
 @table @code
 @item mbox
@@ -941,31 +941,23 @@ mailbox形式です。この場合@var{user}と@var{pass}は使用せず、@var{
 @code{mbox://var/spool/mail/smith})。
 
 @item mh
-A local mailbox in the @acronym{MH} format.  @var{user} and @var{pass} are
-not used.  @var{host-or-file-name} denotes the name of @acronym{MH} folder,
-e.g., @code{mh://Mail/inbox}.
+@acronym{MH}形式のローカルmailboxです。@var{user}と@var{pass}は使用せず、@var{host-or-file-name}は@acronym{MH}フォルダーのファイル名を意味します(例:
+@code{mh://Mail/inbox})。
 
 @item maildir
-A local mailbox in the @acronym{maildir} format.  @var{user} and @var{pass}
-are not used, and @var{host-or-file-name} denotes the name of @code{maildir}
-mailbox, e.g., @code{maildir://mail/inbox}.
+@acronym{maildir}形式のローカルmailboxです。@var{user}と@var{pass}は使用せず、@var{host-or-file-name}は@code{maildir}
+mailboxの名前を意味します(例: @code{maildir://mail/inbox})。
 
 @item file
 任意のmailbox形式です。実際の形式は@code{movemail}により自動的に決定されます。
 
 @item pop
-A remote mailbox to be accessed via POP3 protocol.  @var{user} specifies the
-remote user name to use, @var{pass} may be used to specify the user
-password, @var{host-or-file-name} is the name or IP address of the remote
-mail server to connect to; e.g.,
-@code{pop://smith:guessme@@remote.server.net}.
+POP3プロトコルを通じてアクセスされるリモートmailboxです。@var{user}は使用するリモートのユーザー名を指定し、@var{pass}はユーザーパスワードを指定するのに使用され、@var{host-or-file-name}は接続するリモートメールサーバーのホスト名かIPアドレスです(例:
+@code{pop://smith:guessme@@remote.server.net})。
 
 @item imap
-A remote mailbox to be accessed via IMAP4 protocol.  @var{user} specifies
-the remote user name to use, @var{pass} may be used to specify the user
-password, @var{host-or-file-name} is the name or IP address of the remote
-mail server to connect to; e.g.,
-@code{imap://smith:guessme@@remote.server.net}.
+IMAP4プロトコルを通じてアクセスされるリモートmailboxです。@var{user}は使用するリモートのユーザー名を指定し、@var{pass}はユーザーパスワードを指定するのに使用され、@var{host-or-file-name}は接続するリモートメールサーバーのホスト名かIPアドレスです(例:
+@code{imap://smith:guessme@@remote.server.net})。
 @end table
 
   かわりに、使用するmailboxのファイル名を指定できます。これはプロトコルに@samp{file}を指定するのと等価です:
