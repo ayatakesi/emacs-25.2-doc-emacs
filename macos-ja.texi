@@ -12,22 +12,12 @@
 @cindex Macintosh
 @cindex GNUstep
 
-  This section describes the peculiarities of using Emacs built with the
-GNUstep libraries on GNU/Linux or other operating systems, or on macOS with
-native window system support.  On macOS, Emacs can be built either without
-window system support, with X11, or with the Cocoa interface; this section
-only applies to the Cocoa build.  This does not support versions before Mac
-OS X 10.6.
+  このセクションでは、GNU/Linuxまたはその他のオペレーティングシステムでGNUstepライブラリーとともにビルドされたEmacs、またはmacOSでネイティブウィンドウシステムのサポートつきでビルドされたEmacsを使用する際の特性を説明します。macOSでは、Emacsはウィンドウシステムサポートなし/あり、X11、Cocoaインターフェースのいずれかでビルドできます。このセクションはCocoaビルドだけに適合します。バージョン10.6より前のMac
+OS Xはサポートしません。
 
-  For various historical and technical reasons, Emacs uses the term
-@samp{Nextstep} internally, instead of ``Cocoa'' or ``macOS''; for instance,
-most of the commands and variables described in this section begin with
-@samp{ns-}, which is short for @samp{Nextstep}.  NeXTstep was an application
-interface released by NeXT Inc during the 1980s, of which Cocoa is a direct
-descendant.  Apart from Cocoa, there is another NeXTstep-style system:
-GNUstep, which is free software.  As of this writing, Emacs GNUstep support
-is alpha status (@pxref{GNUstep Support}), but we hope to improve it in the
-future.
+  さまざまな歴史的、技術的な理由により、Emacsは内部的に``Cocoa''や``macOS''ではなく、@samp{Nextstep}という用語を使用します。たとえばこのセクションで説明するほとんどのコマンドや変数は@samp{ns-}で始まりますが、これは@samp{Nextstep}を短縮したものです。NeXTstepは1980年代にNeXT
+Incからリリースされたアプリケーションインターフェースで、Cocoaはそれの直系の子孫です。Cocoaとは別に、他にもNeXTstepスタイルのシステムのGNUstepがあり、これはフリーソフトウェアです。これを記述している時点で、EmacsのGNUstepサポートはアルファ状態(@ref{GNUstep
+Support}を参照してください)ですが、わたしたちは、将来これを改善したいと望んでいます。
 
 @menu
 * Mac / GNUstep Basics::     GNUstepまたはMac 
@@ -66,9 +56,7 @@ selection)に転送するために、@kbd{C-w}や@kbd{M-w}のかわりに、@kbd
 @c in GNU/Linux?  These are sometimes not login shells either.
 latexやmanのような、Emacsの下で実行される多くのプログラムは、環境変数のセッティングに依存します。Emacsがシェルから起動された場合、自動的にこれらの環境変数を継承し、Emacsのサブプロセスもそれらを継承します。しかしEmacsがFinderから起動された場合は、シェルの子プロセスではないので、環境変数はセットされません。これによりサブプロセスの振る舞いが、シェルから実行したときと異なることが起こり得ます。
 
-For the PATH and MANPATH variables, a system-wide method of setting PATH is
-recommended on macOS, using the @file{/etc/paths} files and the
-@file{/etc/paths.d} directory.
+変数PATHおよびMANPATHにたいしては、macOSではPATHをセットするシステムワイドな手法は、@file{/etc/paths}ファイルと@file{/etc/paths.d}ディレクトリーを使用することが推奨されています。
 
 @node Mac / GNUstep Customization
 @section Mac / GNUstep Customization
@@ -93,9 +81,8 @@ ns-popup-color-panel}でカラーパネルを起動して、変更したいEmacs
 このコンテキストで有用なのは、@kbd{M-x list-faces-display}によりすべてのフェイスのリストを取得することです。
 
 @cindex Core Text, on macOS
-In macOS, Emacs uses a Core Text based font backend by default.  If you
-prefer the older font style, enter the following at the command-line before
-starting Emacs:
+macOSでは、EmacsはデフォルトでCore
+Textベースのフォントバックエンドを使用します。古いフォントスタイルにしたい場合は、Emacsを起動する前に、以下のコマンドラインを入力します:
 
 @example
 % defaults write org.gnu.Emacs FontBackend ns
