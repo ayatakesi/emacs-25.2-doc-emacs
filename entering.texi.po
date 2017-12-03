@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 25.1\n"
 "POT-Creation-Date: 2017-11-28 07:15+0000\n"
-"PO-Revision-Date: 2016-09-18 07:06+0900\n"
+"PO-Revision-Date: 2017-12-04 04:03+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: HIRO project <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -262,16 +262,10 @@ msgstr "C-z"
 
 #. type: table
 #: original_texis/entering.texi:104
-#, fuzzy
-#| msgid ""
-#| "On a text terminal, suspend Emacs; on a graphical display, iconify (or "
-#| "``minimize'') the selected frame (@code{suspend-emacs})."
 msgid ""
 "On a text terminal, suspend Emacs; on a graphical display, iconify (or "
 "``minimize'') the selected frame (@code{suspend-frame})."
-msgstr ""
-"テキスト端末ではEmacsをサスペンドします。グラフィカルなディスプレーでは選択さ"
-"れたフレームをアイコン化(または``最小化'')します(@code{suspend-emacs})。"
+msgstr "テキスト端末ではEmacsをサスペンドします。グラフィカルなディスプレーでは選択されたフレームをアイコン化(または``最小化'')します(@code{suspend-frame})。"
 
 #. type: findex
 #: original_texis/entering.texi:107

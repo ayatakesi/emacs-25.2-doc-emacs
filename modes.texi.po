@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 25.1\n"
 "POT-Creation-Date: 2017-11-28 07:15+0000\n"
-"PO-Revision-Date: 2017-12-02 06:34+0900\n"
+"PO-Revision-Date: 2017-12-04 04:08+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: \n"
 "Language: ja\n"
@@ -327,7 +327,7 @@ msgid ""
 "Emacs) run @code{prog-mode-hook}, prior to running their own mode hooks.  "
 "Hook functions can look at the value of the variable @code{major-mode} to "
 "see which mode is actually being entered."
-msgstr "\nFundamentalモード以外のすべてのメジャーモードは、@dfn{モードフック(mode hook)}を定義します。これはバッファーでそのモードが有効になるたびに実行される、カスタマイズ可能なLisp関数のリストです。フックに間する詳細は、@ref{Hooks}を参照してください。各モードフックはメジャーモード名の後に名前がつけられます。たとえばFortranモードのモードフックは、@code{fortran-mode-hook}です。さらに、すべてのテキストベースのメジャーモードは、@code{text-mode-hook}を実行し、多くの、プログラミング言語のモード(Emacsとともに配布されるものを含む) は、その言語モード自身のモードフックの前に、@code{prog-mode-hook}を実行します@footnote{より具体的には、そのモードは@code{prog-mode}から''派生''したモードです(@ref{Derived Modes,,, elisp, The Emacs Lisp Reference Manual}を参照)。} 。フック関数は変数@code{major-mode}の値を調べて、どのモードに入ろうとしているか調べることができます。"
+msgstr "Fundamentalモード以外のすべてのメジャーモードは、@dfn{モードフック(mode hook)}を定義します。これはバッファーでそのモードが有効になるたびに実行される、カスタマイズ可能なLisp関数のリストです。フックに間する詳細は、@ref{Hooks}を参照してください。各モードフックはメジャーモード名の後に名前がつけられます。たとえばFortranモードのモードフックは、@code{fortran-mode-hook}です。さらに、すべてのテキストベースのメジャーモードは、@code{text-mode-hook}を実行し、多くの、プログラミング言語のモード(Emacsとともに配布されるものを含む) は、その言語モード自身のモードフックの前に、@code{prog-mode-hook}を実行します@footnote{より具体的には、そのモードは@code{prog-mode}から''派生''したモードです(@ref{Derived Modes,,, elisp, The Emacs Lisp Reference Manual}を参照)。} 。フック関数は変数@code{major-mode}の値を調べて、どのモードに入ろうとしているか調べることができます。"
 
 #. type: Plain text
 #: original_texis/modes.texi:132
