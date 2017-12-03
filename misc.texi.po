@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 25.1\n"
 "POT-Creation-Date: 2017-11-28 07:15+0000\n"
-"PO-Revision-Date: 2016-10-02 18:43+0900\n"
+"PO-Revision-Date: 2017-12-03 09:51+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
-"Language-Team: HIRO project <h1r0p@outlook.jp>\n"
+"Language-Team: \n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -7116,7 +7116,7 @@ msgstr ""
 #: original_texis/misc.texi:2328
 #, no-wrap
 msgid "frameset-filter-alist"
-msgstr ""
+msgstr "frameset-filter-alist"
 
 #. type: Plain text
 #: original_texis/misc.texi:2338
@@ -7129,7 +7129,7 @@ msgid ""
 "Emacs session; any settings for those parameters in your init file will be "
 "ignored.  To disable this, customize the value of @code{frameset-filter-"
 "alist} to filter out the frame parameters you don't want to be restored."
-msgstr ""
+msgstr "desktopがフレームとウィンドウの設定えおリストアするときは、フレームパラメーターの記録された値を使用し、initファイル(@ref{Init File}を参照)でそれらのパラメーターに何をセットしていても無視されます。これは、リストアされたフレームにたいするフォントやフェイスのようなフレームパラメーターは、前のEmacsセッションを終了したときに保存されたdesktopファイルから取得され、initファイルでのそれらのパラメーターにたいするセッティングは無視されることを意味します。これを無効にするには、リストアしたくないフレームパラメーターを除外するように、@code{frameset-filter-alist}の値をカスタマイズしてください。"
 
 #. type: findex
 #: original_texis/misc.texi:2339

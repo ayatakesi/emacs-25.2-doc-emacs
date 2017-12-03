@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 25.1\n"
 "POT-Creation-Date: 2017-11-28 07:14+0000\n"
-"PO-Revision-Date: 2016-10-02 19:15+0900\n"
+"PO-Revision-Date: 2017-12-03 10:16+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
-"Language-Team: HIRO project <h1r0p@outlook.jp>\n"
+"Language-Team: \n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1147,10 +1147,9 @@ msgstr "-daemon"
 
 #. type: itemx
 #: original_texis/cmdargs.texi:330
-#, fuzzy, no-wrap
-#| msgid "-daemon=@var{SERVER-NAME}"
+#, no-wrap
 msgid "--daemon[=@var{name}]"
-msgstr "-daemon=@var{SERVER-NAME}"
+msgstr "--daemon[=@var{name}]"
 
 #. type: opindex
 #: original_texis/cmdargs.texi:331
@@ -1160,25 +1159,13 @@ msgstr "--daemon"
 
 #. type: table
 #: original_texis/cmdargs.texi:338
-#, fuzzy
-#| msgid ""
-#| "Start Emacs as a daemon---after Emacs starts up, it starts the Emacs "
-#| "server and disconnects from the terminal without opening any frames.  You "
-#| "can then use the @command{emacsclient} command to connect to Emacs for "
-#| "editing.  @xref{Emacs Server}, for information about using Emacs as a "
-#| "daemon."
 msgid ""
 "Start Emacs as a daemon---after Emacs starts up, it starts the Emacs server "
 "and disconnects from the terminal without opening any frames.  (Optionally, "
 "you can specify an explicit @var{name} for the server.)  You can then use "
 "the @command{emacsclient} command to connect to Emacs for editing.  "
 "@xref{Emacs Server}, for information about using Emacs as a daemon."
-msgstr ""
-"Emacsをデーモンとして開始します。これはフレームをオープンせずに、まずEmacsを"
-"開始した後、Emacsサーバーを開始してから、端末との接続を切断します。"
-"@command{emacsclient}コマンドを使用して、編集のためにEmacsに接続できます。"
-"デーモンとしてのEmacsの使用についての情報は、@ref{Emacs Server}を参照してくだ"
-"さい。"
+msgstr "Emacsをデーモンとして開始します。これはフレームをオープンせずに、まずEmacsを開始した後、Emacsサーバーを開始してから、端末との接続を切り離します(オプションでサーバー名に明示的に@var{name}を指定できます)。@command{emacsclient}コマンドを使用して、編集のためにEmacsに接続できます。デーモンとしてのEmacsの使用についての情報は、@ref{Emacs Server}を参照してください。"
 
 #. type: opindex
 #: original_texis/cmdargs.texi:339 original_texis/cmdargs.texi:340
@@ -1535,25 +1522,16 @@ msgstr "EMACSDOC"
 
 #. type: vindex
 #: original_texis/cmdargs.texi:462
-#, fuzzy, no-wrap
-#| msgid "EMACSDATA, environment variable"
+#, no-wrap
 msgid "EMACSDOC, environment variable"
-msgstr "EMACSDATA, environment variable"
+msgstr "EMACSDOC, environment variable"
 
 #. type: table
 #: original_texis/cmdargs.texi:465
-#, fuzzy
-#| msgid ""
-#| "#vindex EMACSDOC, environment variable Directory for the documentation "
-#| "string file, which is used to initialize the Lisp variable @code{doc-"
-#| "directory}."
 msgid ""
 "Directory for the documentation string file, which is used to initialize the "
 "Lisp variable @code{doc-directory}."
-msgstr ""
-"@vindex EMACSDOC, environment variable\n"
-"ドキュメント文字列ファイルのディレクトリーで、Lisp変数@code{doc-directory}の"
-"初期化に使用されます。"
+msgstr "ドキュメント文字列ファイル(documentation string file)にたいするディレクトリーで、Lisp変数@code{doc-directory}の初期化に使用されます。"
 
 #. type: item
 #: original_texis/cmdargs.texi:465
@@ -1563,27 +1541,12 @@ msgstr "EMACSLOADPATH"
 
 #. type: vindex
 #: original_texis/cmdargs.texi:466
-#, fuzzy, no-wrap
-#| msgid "EMACSPATH, environment variable"
+#, no-wrap
 msgid "EMACSLOADPATH, environment variable"
-msgstr "EMACSPATH, environment variable"
+msgstr "EMACSLOADPATH, environment variable"
 
 #. type: table
 #: original_texis/cmdargs.texi:479
-#, fuzzy
-#| msgid ""
-#| "#vindex EMACSLOADPATH, environment variable A colon-separated list of "
-#| "directories@footnote{Here and below, whenever we say ``colon-separated "
-#| "list of directories'', it pertains to Unix and GNU/Linux systems.  On MS-"
-#| "DOS and MS-Windows, the directories are separated by semi-colons instead, "
-#| "since DOS/Windows file names might include a colon after a drive letter.} "
-#| "to search for Emacs Lisp files.  If set, it modifies the usual initial "
-#| "value of the @code{load-path} variable (@pxref{Lisp Libraries}).  An "
-#| "empty element stands for the default value of @code{load-path}; e.g., "
-#| "using @samp{EMACSLOADPATH=\"/tmp:\"} adds @file{/tmp} to the front of the "
-#| "default @code{load-path}.  To specify an empty element in the middle of "
-#| "the list, use 2 colons in a row, as in @samp{EMACSLOADPATH=\"/tmp::/foo"
-#| "\"}."
 msgid ""
 "A colon-separated list of directories@footnote{Here and below, whenever we "
 "say ``colon-separated list of directories'', it pertains to Unix and GNU/"
@@ -1596,18 +1559,7 @@ msgid ""
 "front of the default @code{load-path}.  To specify an empty element in the "
 "middle of the list, use 2 colons in a row, as in @samp{EMACSLOADPATH=\"/"
 "tmp::/foo\"}."
-msgstr ""
-"@vindex EMACSLOADPATH, environment variable\n"
-"Emacs Lispファイルを検索する、コロンで区切られたディレクトリーのリスト"
-"@footnote{これ以降、``コロンで区切られたディレクトリーのリスト''という場合"
-"は、UnixおよびGNU/Linuxシステムの場合を指します。MS-DOSおよびMS-Windowsでは、"
-"DOS/Windowsファイル名にはドライブ文字の後のコロンが含まれるので、かわりにセミ"
-"コロンでディレクトリーが区切られます。}です。セットされている場合は、変数"
-"@code{load-path}の初期値です(@ref{Lisp Libraries}を参照してください)。空の要"
-"素は、@code{load-path}のデフォルト値を意味します。たとえば"
-"@samp{EMACSLOADPATH=\"/tmp:\"}を使用すると、デフォルトの@code{load-path}の前"
-"に@file{/tmp}を追加します。リストの中間に空の要素を指定するには、"
-"@samp{EMACSLOADPATH=\"/tmp::/foo\"}のように、2つのコロンを続けます。"
+msgstr "Emacs Lispファイルを検索する、コロンで区切られたディレクトリーのリスト@footnote{これ以降、``コロンで区切られたディレクトリーのリスト''という場合は、UnixおよびGNU/Linuxシステムの場合を指します。MS-DOSおよびMS-Windowsでは、DOS/Windowsファイル名にはドライブ文字の後のコロンが含まれるので、かわりにセミコロンでディレクトリーが区切られます。}です。セットされている場合は、変数@code{load-path}の初期値です(@ref{Lisp Libraries}を参照してください)。空の要素は、@code{load-path}のデフォルト値を意味します。たとえば@samp{EMACSLOADPATH=\"/tmp:\"}を使用すると、デフォルトの@code{load-path}の前に@file{/tmp}を追加します。リストの中間に空の要素を指定するには、@samp{EMACSLOADPATH=\"/tmp::/foo\"}のように、2つのコロンを続けます。"
 
 #. type: item
 #: original_texis/cmdargs.texi:479
@@ -1900,23 +1852,12 @@ msgstr ""
 
 #. type: table
 #: original_texis/cmdargs.texi:555
-#, fuzzy
-#| msgid ""
-#| "On MS-Windows and OS X, if @env{LANG} is not already set in the "
-#| "environment, Emacs sets it based on the system-wide default.  You can set "
-#| "this in the ``Regional Settings'' Control Panel on some versions of MS-"
-#| "Windows, and in the ``Language and Region'' System Preference on OS X."
 msgid ""
 "On MS-Windows and macOS, if @env{LANG} is not already set in the "
 "environment, Emacs sets it based on the system-wide default.  You can set "
 "this in the ``Regional Settings'' Control Panel on some versions of MS-"
 "Windows, and in the ``Language and Region'' System Preference on macOS."
-msgstr ""
-"MS-WindowsとOS Xでは、環境で@env{LANG}がまだセットされていない場合、Emacsはシ"
-"ステムワイドなデフォルト言語にもとづき、@env{LANG}をセットします。MS-Windows"
-"のいくつかのバージョンでは、これはコントロールパネルの@samp{Regional "
-"Settings}でセットでき、OS Xでは``Language and Region'' System Preferenceで"
-"セットできます。"
+msgstr "MS-WindowsとmacOSでは、環境で@env{LANG}がまだセットされていない場合、Emacsはシステムワイドなデフォルト言語にもとづき、@env{LANG}をセットします。MS-Windowsのいくつかのバージョンでは、これはコントロールパネルの@samp{Regional Settings}でセットでき、macOSではSystem Preferenceの``Language and Region''でセットできます。"
 
 #. type: table
 #: original_texis/cmdargs.texi:561

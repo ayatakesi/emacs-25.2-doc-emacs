@@ -242,11 +242,8 @@ Emacs}を参照してください)。
 @opindex -daemon
 @itemx --daemon[=@var{name}]
 @opindex --daemon
-Start Emacs as a daemon---after Emacs starts up, it starts the Emacs server
-and disconnects from the terminal without opening any frames.  (Optionally,
-you can specify an explicit @var{name} for the server.)  You can then use
-the @command{emacsclient} command to connect to Emacs for editing.
-@xref{Emacs Server}, for information about using Emacs as a daemon.
+Emacsをデーモンとして開始します。これはフレームをオープンせずに、まずEmacsを開始した後、Emacsサーバーを開始してから、端末との接続を切り離します(オプションでサーバー名に明示的に@var{name}を指定できます)。@command{emacsclient}コマンドを使用して、編集のためにEmacsに接続できます。デーモンとしてのEmacsの使用についての情報は、@ref{Emacs
+Server}を参照してください。
 
 @item --no-desktop
 @opindex --no-desktop
@@ -339,21 +336,13 @@ D-BusサポートつきでEmacsがコンパイルされている場合、D-Bus�
 Emacsに含まれるアーキテクチャーに独立なファイルのディレクトリーです。これは変数@code{data-directory}の初期化に使用されます。
 @item EMACSDOC
 @vindex EMACSDOC, environment variable
-Directory for the documentation string file, which is used to initialize the
-Lisp variable @code{doc-directory}.
+ドキュメント文字列ファイル(documentation string
+file)にたいするディレクトリーで、Lisp変数@code{doc-directory}の初期化に使用されます。
 @item EMACSLOADPATH
 @vindex EMACSLOADPATH, environment variable
-A colon-separated list of directories@footnote{Here and below, whenever we
-say ``colon-separated list of directories'', it pertains to Unix and
-GNU/Linux systems.  On MS-DOS and MS-Windows, the directories are separated
-by semi-colons instead, since DOS/Windows file names might include a colon
-after a drive letter.} to search for Emacs Lisp files.  If set, it modifies
-the usual initial value of the @code{load-path} variable (@pxref{Lisp
-Libraries}).  An empty element stands for the default value of
-@code{load-path}; e.g., using @samp{EMACSLOADPATH="/tmp:"} adds @file{/tmp}
-to the front of the default @code{load-path}.  To specify an empty element
-in the middle of the list, use 2 colons in a row, as in
-@samp{EMACSLOADPATH="/tmp::/foo"}.
+Emacs
+Lispファイルを検索する、コロンで区切られたディレクトリーのリスト@footnote{これ以降、``コロンで区切られたディレクトリーのリスト''という場合は、UnixおよびGNU/Linuxシステムの場合を指します。MS-DOSおよびMS-Windowsでは、DOS/Windowsファイル名にはドライブ文字の後のコロンが含まれるので、かわりにセミコロンでディレクトリーが区切られます。}です。セットされている場合は、変数@code{load-path}の初期値です(@ref{Lisp
+Libraries}を参照してください)。空の要素は、@code{load-path}のデフォルト値を意味します。たとえば@samp{EMACSLOADPATH="/tmp:"}を使用すると、デフォルトの@code{load-path}の前に@file{/tmp}を追加します。リストの中間に空の要素を指定するには、@samp{EMACSLOADPATH="/tmp::/foo"}のように、2つのコロンを続けます。
 @item EMACSPATH
 @vindex EMACSPATH, environment variable
 実行可能ファイルを検索するための、コロンで区切られたディレクトリーのリストです。セットされている場合、Emacsは変数@code{exec-path}(@ref{Shell}を参照してください)を初期化するときに、@env{PATH}(以下参照)に加えてこれをを使用します。
@@ -406,10 +395,8 @@ to search for files.
 そのユーザーの優先されるlocaleです。localeには6つのカテゴリーがあり、それぞれ環境変数で指定されます。ソートは@env{LC_COLLATE}、文字エンコーディングは@env{LC_CTYPE}、システムメッセージは@env{LC_MESSAGES}、通貨形式は@env{LC_MONETARY}、数字は@env{LC_NUMERIC}、日時は@env{LC_TIME}でlocaleを指定します。これらの変数の1つがセットされていない場合、そのカテゴリーのデフォルトは環境変数@env{LANG}の値、@env{LANG}がセットされていない場合は@samp{C}
 localeになります。しかし@env{LC_ALL}が指定された場合、これは他のすべてのlocale環境変数のセッティングをオーバーライドします。
 
-On MS-Windows and macOS, if @env{LANG} is not already set in the
-environment, Emacs sets it based on the system-wide default.  You can set
-this in the ``Regional Settings'' Control Panel on some versions of
-MS-Windows, and in the ``Language and Region'' System Preference on macOS.
+MS-WindowsとmacOSでは、環境で@env{LANG}がまだセットされていない場合、Emacsはシステムワイドなデフォルト言語にもとづき、@env{LANG}をセットします。MS-Windowsのいくつかのバージョンでは、これはコントロールパネルの@samp{Regional
+Settings}でセットでき、macOSではSystem Preferenceの``Language and Region''でセットできます。
 
 @env{LC_CTYPE}カテゴリーの値は、デフォルトの言語環境(language environment)とコーディングシステム(coding
 system)を選択するために、@code{locale-language-names}、@code{locale-charset-language-names}、@code{locale-preferred-coding-systems}のエントリーにたいしてマッチされます。@ref{Language

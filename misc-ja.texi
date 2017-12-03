@@ -1570,15 +1570,8 @@ a hexl-@key{RET}}とタイプしてください。
 を保存すると、後のEmacsセッションで、保存されたデスクトップをリロードできます。デフォルトでは、デスクトップはフレームとウィンドウ設定も保存しようと試みます。これを無効にするには、@code{desktop-restore-frames}を@code{nil}にセットします(この振る舞いを調整するためにマスタマイズできる関連オプションについては、変数のドキュメントを参照してください)。
 
 @vindex frameset-filter-alist
-   When the desktop restores the frame and window configuration, it uses the
-recorded values of frame parameters, disregarding any settings for those
-parameters you have in your init file (@pxref{Init File}).  This means that
-frame parameters such as fonts and faces for the restored frames will come
-from the desktop file, where they were saved when you exited your previous
-Emacs session; any settings for those parameters in your init file will be
-ignored.  To disable this, customize the value of
-@code{frameset-filter-alist} to filter out the frame parameters you don't
-want to be restored.
+   desktopがフレームとウィンドウの設定えおリストアするときは、フレームパラメーターの記録された値を使用し、initファイル(@ref{Init
+File}を参照)でそれらのパラメーターに何をセットしていても無視されます。これは、リストアされたフレームにたいするフォントやフェイスのようなフレームパラメーターは、前のEmacsセッションを終了したときに保存されたdesktopファイルから取得され、initファイルでのそれらのパラメーターにたいするセッティングは無視されることを意味します。これを無効にするには、リストアしたくないフレームパラメーターを除外するように、@code{frameset-filter-alist}の値をカスタマイズしてください。
 
 @findex desktop-save
 @vindex desktop-save-mode
