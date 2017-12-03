@@ -219,8 +219,7 @@ uid gid)}にセットします。
 Unixシステムをエミュレートします。@code{GNU}と同様ですが、@code{ls-lisp-verbosity}は@code{(links
 uid)}にセットします。
 @item MacOS
-Emulate macOS@.  Sets @code{ls-lisp-ignore-case} to @code{t}, and
-@code{ls-lisp-dirs-first} and @code{ls-lisp-verbosity} to @code{nil}.
+macOSをエミュレートします。@code{ls-lisp-ignore-case}を@code{t}に、@code{ls-lisp-dirs-first}と@code{ls-lisp-verbosity}を@code{nil}にセットします。
 @item MS-Windows
 MS-Windowsをエミュレートします。@code{ls-lisp-ignore-case}と@code{ls-lisp-dirs-first}を@code{t}にセットし、@code{ls-lisp-verbosity}を、Windows
 NT/2000/XP/003では@code{(links)}、Windows
@@ -331,20 +330,10 @@ key)}として登録して、Windowsにたいするそのキー特別な意味�
 @vindex w32-lwindow-modifier
 @vindex w32-rwindow-modifier
 @vindex w32-scroll-lock-modifier
-  The variable @code{w32-lwindow-modifier} determines the effect of the left
-Windows key (usually labeled with @key{start} and the Windows logo).  If its
-value is @code{nil} (the default), the key will produce the symbol
-@code{lwindow}.  Setting it to one of the symbols @code{hyper},
-@code{super}, @code{meta}, @code{alt}, @code{control}, or @code{shift} will
-produce the respective modifier.  A similar variable
-@code{w32-rwindow-modifier} controls the effect of the right Windows key,
-and @code{w32-scroll-lock-modifier} does the same for the @key{ScrLock}
-key.  If these variables are set to @code{nil}, the right Windows key
-produces the symbol @code{rwindow} and @key{ScrLock} produces the symbol
-@code{scroll}.  If you want @key{ScrLock} to produce the same effect as in
-other applications, i.e.@: toggle the Scroll Lock @acronym{LED} indication
-on the keyboard, set @code{w32-scroll-lock-modifier} to @code{t} or any
-non-@code{nil} value other than the above modifier symbols.
+  変数@code{w32-lwindow-modifier}は、左Windowsキー(通常は@key{start}とWindowsのロゴのラベル)の効果を決定します。この変数の値が@code{nil}
+(デフォルト)の場合、このキーはシンボル@code{lwindow}を生成します。シンボル@code{hyper}、@code{super}、@code{meta}、@code{alt}、@code{control}、@code{shift}のうち、どれか1つをセットした場合は、対応する修飾が生成されます。これと似た変数@code{w32-rwindow-modifier}は、右Windowsキーの効果を制御し、@code{w32-scroll-lock-modifier}は@key{ScrLock}と同様のことを行います。これらの変数が@code{nil}にセットされている場合、右Windowsキーがシンボル@code{rwindow}、@key{ScrLock}がシンボル@code{scroll}を生成します。たとえばキーボード上のScroll
+Lock
+@acronym{LED}標示を切り替える等、他のアプリケーションのときと同様の効果を@key{ScrLock}に生成させたい場合は、@code{w32-scroll-lock-modifier}の値に上記の修飾シンボルではなく@code{t}か、任意の非@code{nil}をセットしてください。
 
 @vindex w32-pass-alt-to-system
 @cindex Windows system menu
