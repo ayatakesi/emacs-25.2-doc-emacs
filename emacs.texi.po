@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 25.2\n"
 "POT-Creation-Date: 2017-11-28 07:15+0000\n"
-"PO-Revision-Date: 2017-12-04 03:45+0900\n"
+"PO-Revision-Date: 2017-12-04 07:12+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: \n"
 "Language: ja\n"
@@ -4960,7 +4960,7 @@ msgstr "Xref Commands"
 #. type: menuentry
 #: original_texis/emacs.texi:879
 msgid "Commands in the @file{*xref*} buffer."
-msgstr "Commands in the @file{*xref*} buffer."
+msgstr "@file{*xref*}バッファーでのコマンド。"
 
 #. type: menuentry
 #: original_texis/emacs.texi:879
