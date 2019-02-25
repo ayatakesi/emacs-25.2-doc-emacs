@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 25.2\n"
 "POT-Creation-Date: 2017-11-28 07:15+0000\n"
-"PO-Revision-Date: 2017-12-04 04:03+0900\n"
+"PO-Revision-Date: 2019-02-26 06:29+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: \n"
 "Language: ja\n"
@@ -217,7 +217,7 @@ msgstr "Exiting"
 #: original_texis/entering.texi:92
 #, no-wrap
 msgid "Exiting Emacs"
-msgstr "Exiting Emacs"
+msgstr "Emacsからのexit"
 
 #. type: cindex
 #: original_texis/entering.texi:93

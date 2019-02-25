@@ -1,13 +1,8 @@
-# Japanese translation of Emacs-25.2 editor manual
-# Copyright (C) 2016 Free Software Foundation, Inc.
-# This file is distributed under the same license as the Emacs package.
-# Ayanokoji Takesi <ayanokoji.takesi@gmail.com>.
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: 25.2\n"
 "POT-Creation-Date: 2017-11-28 07:15+0000\n"
-"PO-Revision-Date: 2016-09-18 06:53+0900\n"
+"PO-Revision-Date: 2019-02-26 06:27+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: \n"
 "Language: ja\n"
@@ -47,7 +42,7 @@ msgstr "User Input"
 #: original_texis/commands.texi:19
 #, no-wrap
 msgid "Kinds of User Input"
-msgstr "Kinds of User Input"
+msgstr "ユーザー入力の種類"
 
 #. type: cindex
 #: original_texis/commands.texi:20
@@ -378,7 +373,7 @@ msgstr "Commands"
 #: original_texis/commands.texi:137
 #, no-wrap
 msgid "Keys and Commands"
-msgstr "Keys and Commands"
+msgstr "キーとコマンド"
 
 #. type: cindex
 #: original_texis/commands.texi:139
